@@ -1,17 +1,20 @@
-// export-layer/nuxt.config.ts
+import { fileURLToPath } from 'node:url';
+
+// This dynamically grabs the absolute path of the parent directory
+// no matter where Nuxt caches it on your machine.
+const parentDir = fileURLToPath(new URL('..', import.meta.url));
+
 export default defineNuxtConfig({
-  components: [
-    // Reach up to the main repo's components folder
-    { path: '../components', pathPrefix: false, global: true },
-  ],
+  components: [{ path: `${parentDir}/components`, pathPrefix: false, global: true }],
   imports: {
-    // Reach up to your composables and types
-    dirs: ['../composables', '../utils', '../types'],
+    dirs: [`${parentDir}/composables`, `${parentDir}/utils`, `${parentDir}/types`],
   },
   alias: {
-    // Fixes the Vue compiler "extends base type" error by telling it
-    // where the root of the project is inside the downloaded cache
-    '~': '..',
-    '@': '..',
+    '~': parentDir,
+    '@': parentDir,
+    '~~': parentDir,
+    '@@': parentDir,
   },
+  // If you also want to share server/utils or server/api routes, uncomment this:
+  // serverDir: `${parentDir}/server`
 });
