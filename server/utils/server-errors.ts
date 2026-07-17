@@ -1,4 +1,4 @@
-import type { BaseError, ServerErrorCode } from '~/shared/types/globals';
+import type { BaseError, ServerErrorCode } from '~/types/globals';
 
 // Server-side error responses
 export const serverErrors = {

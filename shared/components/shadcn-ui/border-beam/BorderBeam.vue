@@ -13,7 +13,7 @@
 </template>
 
 <script setup lang="ts">
-import { cn } from '~/shared/utils';
+import { cn } from '~/utils';
 import { computed } from 'vue';
 
 interface BorderBeamProps {

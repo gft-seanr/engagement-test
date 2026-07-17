@@ -25,7 +25,7 @@
 </template>
 
 <script lang="ts" setup>
-import { cn } from '~/shared/utils';
+import { cn } from '~/utils';
 import type { HTMLAttributes } from 'vue';
 
 interface Props {

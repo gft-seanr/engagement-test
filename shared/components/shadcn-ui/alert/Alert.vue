@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import type { HTMLAttributes } from 'vue';
 import type { AlertVariants } from '.';
-import { cn } from '~/shared/utils';
+import { cn } from '~/utils';
 import { alertVariants } from '.';
 
 const props = defineProps<{

@@ -1,5 +1,5 @@
 import { plugin, defaultConfig } from '@formkit/vue';
-import { size, sizeValidationMessage } from '../shared/utils/FormKit/custom-rules';
+import { size, sizeValidationMessage } from '../utils/FormKit/custom-rules';
 
 import { rootClasses as rootClasses1 } from '~/assets/formkit-themes/formkit-theme-1';
 import { rootClasses as rootClasses2 } from '~/assets/formkit-themes/formkit-theme-2';
