@@ -1,0 +1,147 @@
+{
+  "pageHead": {
+    "title": "BPI Online Migration Promo | Giftaway"
+  },
+  "pages": {
+    "home": {
+      "template": "home-main",
+      "sections": [
+        {
+          "id": "cover",
+          "component": "cover-image",
+          "props": {
+            "coverUrl": "https://s3.us-east-1.amazonaws.com/assets.giftaway.ph/images/affiliates/bpi-engagement-test/ONLINE%20MIGRATION%20TEST%20KV%20%281%29.webp"
+          },
+          "classes": {
+            "outer": "-mx-6"
+          },
+          "attrs": {
+            "alt": "BPI OMD Migration Promo",
+            "height": "241"
+          }
+        },
+        {
+          "id": "heading",
+          "component": "heading-hero",
+          "props": {
+            "title": "OMD Migration Promo",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam explicabo repellat illo magni natus qui laudantium animi fugiat minima magnam!"
+          }
+        },
+        {
+          "id": "campaign",
+          "component": "frequency-spend-single-by-tier-with-dash-steps",
+          "alert": {
+            "map": {
+              "Unauthorized": {
+                "type": "error",
+                "description": "You have been logged out. Please re-login to continue."
+              }
+            }
+          },
+          "props": {
+            "title": "🏁 Spend Goals",
+            "iconUrl": "https: //s3.us-east-1.amazonaws.com/assets.giftaway.ph/images/affiliates/bpi-omd/%F0%9F%92%B3.png",
+            "rewards": [
+              {
+                "tier": 1,
+                "denominationId": 7044,
+                "merchantId": 6312,
+                "value": 100,
+                "quantity": 3,
+                "type": "gift",
+                "rewardName": "P300 Giftaway Universal eGC",
+                "merchantName": "Universal eGC"
+              },
+              {
+                "tier": 2,
+                "denominationId": 7042,
+                "merchantId": 6312,
+                "value": 500,
+                "quantity": 1,
+                "type": "gift",
+                "rewardName": "P500 Giftaway Universal eGC",
+                "merchantName": "Universal eGC"
+              },
+              {
+                "tier": 3,
+                "denominationId": 7042,
+                "merchantId": 6312,
+                "value": 500,
+                "quantity": 1,
+                "type": "gift",
+                "rewardName": "500 Giftaway Universal eGC",
+                "merchantName": "Universal eGC"
+              }
+            ],
+            "progress": [
+              {
+                "tier": 1,
+                "target": 1,
+                "description": "Spend on 3 online transactions of at least P2,000 to get your P300 Giftaway Universal eGC."
+              },
+              {
+                "tier": 2,
+                "target": 1,
+                "description": "Spend on 3 online transactions of at least P2,500 to get your P500 Giftaway Universal eGC."
+              },
+              {
+                "tier": 3,
+                "target": 1,
+                "description": "Spend on 5 online transactions of at least P2,500 to get your P500 Giftaway Universal eGC."
+              }
+            ],
+            "unit": {
+              "currency": {
+                "prefix": "",
+                "suffix": ""
+              },
+              "label": {
+                "current": "Spend",
+                "target": "Spend",
+                "remaining": ["Spend to Go", "Spends to Go"]
+              }
+            }
+          }
+        },
+        {
+          "id": "transactions",
+          "component": "drawer-transaction",
+          "props": {
+            "title": "Qualified Transactions",
+            "label": "See qualified transactions",
+            "suffixIcon": "lucide:chevron-right"
+          }
+        },
+        {
+          "id": "footer",
+          "component": "footer-legal-clause",
+          "props": {
+            "affiliate": "BPI"
+          },
+          "classes": {
+            "outer": "mt-20"
+          }
+        }
+      ]
+    }
+  },
+  "theme": {
+    "colors": {
+      "--primary": "#F39C01",
+      "--primary-soft": "#FFE9C2",
+      "--primary-dark": "#F39C01",
+      "--primary-dark-soft": "#ffe1ad0d"
+    }
+  },
+  "schedule": {
+    "registration": {
+      "startDateTime": "",
+      "endDateTime": "10/01/2026 12:09:00"
+    },
+    "redemption": {
+      "startDateTime": "",
+      "endDateTime": ""
+    }
+  }
+}

@@ -1,0 +1,626 @@
+{
+  "pageHead": {
+    "title": "Security Bank's Unwrap the Joy 2025 Promo | Giftaway"
+  },
+  "pages": {
+    "home": {
+      "template": "home-main",
+      "classes": {
+        "outer": "bg-surface-lower-2",
+        "wrapper": "gap-10"
+      },
+      "sections": [
+        {
+          "id": "campaign",
+          "component": "accumulated-spend-single-with-puzzle",
+          "props": {
+            "logoUrl": "https://s3.us-east-1.amazonaws.com/assets.giftaway.ph/images/affiliates/securitybank/sb-icon.png",
+            "puzzleItems": [
+              {
+                "url": "https://s3.us-east-1.amazonaws.com/assets.giftaway.ph/images/affiliates/securitybank/top-left.png",
+                "width": 74.14,
+                "height": 67.32,
+                "x": 0,
+                "y": 0,
+                "order": 5
+              },
+              {
+                "url": "https://s3.us-east-1.amazonaws.com/assets.giftaway.ph/images/affiliates/securitybank/top-center.png",
+                "width": 96.42,
+                "height": 91.1,
+                "x": 51.61,
+                "y": 0,
+                "order": 6
+              },
+              {
+                "url": "https://s3.us-east-1.amazonaws.com/assets.giftaway.ph/images/affiliates/securitybank/top-right.png",
+                "width": 93.01,
+                "height": 92.58,
+                "x": 122.99,
+                "y": 0,
+                "order": 1
+              },
+              {
+                "url": "https://s3.us-east-1.amazonaws.com/assets.giftaway.ph/images/affiliates/securitybank/left-center.png",
+                "width": 89.17,
+                "height": 106.73,
+                "x": 0,
+                "y": 39.22,
+                "order": 3
+              },
+              {
+                "url": "https://s3.us-east-1.amazonaws.com/assets.giftaway.ph/images/affiliates/securitybank/center.png",
+                "width": 91.95,
+                "height": 82.34,
+                "x": 62.33,
+                "y": 64,
+                "order": 9
+              },
+              {
+                "url": "https://s3.us-east-1.amazonaws.com/assets.giftaway.ph/images/affiliates/securitybank/right-center.png",
+                "width": 87.4,
+                "height": 94.31,
+                "x": 128,
+                "y": 63,
+                "order": 4
+              },
+              {
+                "url": "https://s3.us-east-1.amazonaws.com/assets.giftaway.ph/images/affiliates/securitybank/bottom-left.png",
+                "width": 66.59,
+                "height": 94.04,
+                "x": 0,
+                "y": 122.24,
+                "order": 7
+              },
+              {
+                "url": "https://s3.us-east-1.amazonaws.com/assets.giftaway.ph/images/affiliates/securitybank/bottom-center.png",
+                "width": 136.71,
+                "height": 92.09,
+                "x": 39.96,
+                "y": 124.19,
+                "order": 2
+              },
+              {
+                "url": "https://s3.us-east-1.amazonaws.com/assets.giftaway.ph/images/affiliates/securitybank/bottom-right.png",
+                "width": 69.29,
+                "height": 80.39,
+                "x": 146.71,
+                "y": 135.88,
+                "order": 8
+              }
+            ],
+            "emptyPuzzleUrl": "https://s3.us-east-1.amazonaws.com/assets.giftaway.ph/images/affiliates/securitybank/puzzle-empty.webp",
+            "completePuzzleUrl": "https://s3.us-east-1.amazonaws.com/assets.giftaway.ph/images/affiliates/securitybank/puzzle%20card%20-%20no%20outline.webp",
+            "completeMessage": "Your eGC Reward will be sent to your mobile number within 30 days after the promo ends.",
+            "helpContent": {
+              "triggerText": "",
+              "triggerIcon": "lucide:circle-question-mark",
+              "sheetTitle": "How this works",
+              "sheetContent": "$$Unwrap the joy of holiday shopping and be rewarded with eGCs when you reach the accumulated spend using your Security Bank Mastercard credit card! Plus, earn EXTRA eGCs on your Installment spend.\n\n| Card Type | Spend Goal | Reward |\n|-----------|------------|--------|\n| Next | P60,000 | P2,000 eGC |\n| Wave | P100,000 | P3,000 eGC |\n| Gold | P150,000 | P4,500 eGC |\n| Platinum | P300,000 | P9,000 eGC |\n| World | P500,000 | P15,000 eGC |\n\n## Bonus Reward\n**Installment Spend**: P40,000 → P1,000 eGC",
+              "linkExternal": {
+                "label": "Terms and Conditions apply",
+                "prefixIcon": "lucide:info",
+                "destination": "https://s3.us-east-1.amazonaws.com/assets.giftaway.ph/documents/SB-COR10024_ID4537_TnCs.pdf"
+              }
+            },
+            "rewards": {
+              "b80df888-c233-4f8b-aa8d-de92c76bc52f": {
+                "Next": {
+                  "tier": 0,
+                  "denominationId": 0,
+                  "merchantId": 0,
+                  "value": 2000,
+                  "quantity": 1,
+                  "type": "gift",
+                  "rewardName": "P2,000 eGC",
+                  "merchantName": "Universal eGC",
+                  "targetDescription": "P65K spend goal"
+                },
+                "Wave": {
+                  "tier": 0,
+                  "denominationId": 0,
+                  "merchantId": 0,
+                  "value": 3000,
+                  "quantity": 1,
+                  "type": "gift",
+                  "rewardName": "P3,000 eGC",
+                  "merchantName": "Universal eGC",
+                  "targetDescription": "P100K spend goal"
+                },
+                "Gold": {
+                  "tier": 0,
+                  "denominationId": 0,
+                  "merchantId": 0,
+                  "value": 4500,
+                  "quantity": 1,
+                  "type": "gift",
+                  "rewardName": "P4,500 eGC",
+                  "merchantName": "Universal eGC",
+                  "targetDescription": "P150K spend goal"
+                },
+                "Platinum": {
+                  "tier": 0,
+                  "denominationId": 0,
+                  "merchantId": 0,
+                  "value": 9000,
+                  "quantity": 1,
+                  "type": "gift",
+                  "rewardName": "P9,000 eGC",
+                  "merchantName": "Universal eGC",
+                  "targetDescription": "P300K spend goal"
+                },
+                "World": {
+                  "tier": 0,
+                  "denominationId": 0,
+                  "merchantId": 0,
+                  "value": 15000,
+                  "quantity": 1,
+                  "type": "gift",
+                  "rewardName": "P15,000 eGC",
+                  "merchantName": "Universal eGC",
+                  "targetDescription": "P500K spend goal"
+                }
+              },
+              "23884e4e-1aa8-4a72-9e03-83bbe6e026c3": {
+                "tier": 0,
+                "denominationId": 0,
+                "merchantId": 0,
+                "value": 1000,
+                "quantity": 1,
+                "type": "gift",
+                "rewardName": "P1,000 eGC",
+                "merchantName": "Universal eGC",
+                "targetDescription": "P40K Installment spend goal"
+              }
+            },
+            "colors": {
+              "accent-primary": "#4B9ECF",
+              "accent-primary-light": "#4B9ECF",
+              "dark-accent-primary": "#222B37",
+              "dark-accent-primary-light": "#222B37",
+              "beamFrom": "#F3850D",
+              "beamTo": "#FEF0C3"
+            }
+          },
+          "classes": {
+            "outer": "-mx-6 pb-12 border-b border-border-neutral",
+            "helpContent": {
+              "classes": {
+                "sheetContent": "prose-td:nth-2:text-right prose-th:nth-2:text-right prose-td:nth-3:text-right prose-th:nth-3:text-right"
+              }
+            }
+          }
+        },
+        {
+          "id": "history",
+          "component": "table-transaction",
+          "props": {
+            "title": "Transaction History",
+            "emptyMessage": "Your transaction history is empty for now. Please check back on November 17, 2025 to track your progress.",
+            "hasTotal": false,
+            "additionalReference": "spendType"
+          },
+          "classes": {
+            "outer": "mb-10",
+            "emptyMessage": "text-center tracking-wide leading-7 pb-16"
+          }
+        },
+        {
+          "id": "link-external",
+          "component": "link-external",
+          "props": {
+            "label": "Terms and Conditions apply",
+            "prefixIcon": "lucide:info",
+            "destination": "https://s3.us-east-1.amazonaws.com/assets.giftaway.ph/documents/SB-COR10024_ID4537_TnCs.pdf"
+          }
+        },
+        {
+          "id": "logout",
+          "component": "button-logout",
+          "props": {
+            "suffixIcon": "lucide:log-out",
+            "label": "Log out"
+          }
+        },
+        {
+          "id": "footer",
+          "component": "footer-legal-clause",
+          "props": {
+            "affiliate": "Securtity Bank"
+          }
+        }
+      ]
+    },
+    "login": {
+      "template": "login-with-otp",
+      "states": ["login", "otp", "expired"],
+      "sections": [
+        {
+          "id": "cover",
+          "component": "cover-image",
+          "props": {
+            "coverUrl": "https://s3.us-east-1.amazonaws.com/assets.giftaway.ph/images/affiliates/securitybank/COR10024_ID4537_CampaignMat-Banner-UTJ-edm.webp"
+          },
+          "classes": {
+            "outer": "-mx-6"
+          },
+          "attrs": {
+            "height": "216"
+          }
+        },
+        {
+          "id": "heading",
+          "component": "heading-hero",
+          "props": {
+            "title": "Unwrap the Joy 2025 Promo",
+            "description": "$$Unwrap the joy this holiday season! Spend and be rewarded with up to PHP15,000 eGC when you shop anywhere and reach the accumulated spend requirement using your Security Bank Mastercard! Plus, earn an EXTRA PHP1,000 eGC on your Installment spend.\n\nPromo is open to select cardholders who will receive the communication materials and their unique code for registration via Viber, SMS, In-app inbox or email."
+          }
+        },
+        {
+          "id": "form-login",
+          "component": "form-login",
+          "state": "login",
+          "alert": {
+            "component": "alert-card",
+            "map": {
+              "InvalidUserPassword": {
+                "type": "error",
+                "title": "Invalid Unique Code or Mobile Number",
+                "description": "The unique code or mobile number you entered is incorrect. Please try again."
+              }
+            }
+          },
+          "schema": [
+            {
+              "$el": "h1",
+              "children": "Login",
+              "attrs": {
+                "class": "text-2xl font-bold mb-4"
+              }
+            },
+            {
+              "$formkit": "text",
+              "name": "code",
+              "id": "code",
+              "label": "Unique code",
+              "validation": "required|length:8,8"
+            },
+            {
+              "$formkit": "text",
+              "name": "mobileNo",
+              "id": "mobileno",
+              "label": "Mobile number",
+              "validation": [["required"], ["matches", "/^(09)[0-9]{9}$/"]],
+              "placeholder": "09XX-XXX-XXXX",
+              "validationMessages": {
+                "matches": "Please enter a valid Philippine mobile number."
+              }
+            },
+            {
+              "$formkit": "submit",
+              "type": "submit",
+              "name": "submit",
+              "id": "submit",
+              "label": "Log in",
+              "disabled": "$disabled",
+              "children": {
+                "if": "$disabled",
+                "then": {
+                  "$el": "span",
+                  "attrs": {
+                    "class": "w-6 h-6 border-2 border-surface-1 border-r-transparent mr-2 rounded-full animate-spin"
+                  }
+                },
+                "else": "$label"
+              }
+            }
+          ]
+        },
+        {
+          "id": "divider",
+          "component": "divider-horizontal-with-label",
+          "state": "login",
+          "props": {
+            "label": "Don't have an account?"
+          }
+        },
+        {
+          "id": "link-internal",
+          "component": "link-internal",
+          "state": "login",
+          "props": {
+            "destination": "/register",
+            "label": "Register"
+          }
+        },
+        {
+          "id": "form-login-otp",
+          "component": "form-login-otp",
+          "state": "otp",
+          "schema": [
+            {
+              "$el": "h1",
+              "children": "Login Verification",
+              "attrs": {
+                "class": "text-2xl font-bold mb-4"
+              }
+            },
+            {
+              "$formkit": "text",
+              "name": "code",
+              "id": "code",
+              "label": "Verification code",
+              "validation": "required|length:6,6",
+              "help": "Please enter the 6-digit code sent to your mobile number.",
+              "sectionsSchema": {
+                "input": {
+                  "attrs": {
+                    "autofocus": true
+                  }
+                },
+                "help": {
+                  "children": "$: 'Please enter the 6-digit code sent to ' + $mobileNo + '.'"
+                }
+              }
+            },
+            {
+              "$formkit": "submit",
+              "type": "submit",
+              "id": "submit",
+              "name": "submit",
+              "label": "Proceed",
+              "disabled": "$disabled",
+              "children": {
+                "if": "$disabled",
+                "then": {
+                  "$el": "span",
+                  "attrs": {
+                    "class": "w-6 h-6 border-2 border-surface-1 border-r-transparent mr-2 rounded-full animate-spin"
+                  }
+                },
+                "else": "$label"
+              }
+            }
+          ]
+        },
+        {
+          "id": "alert",
+          "state": "expired",
+          "component": "alert-hero-centered",
+          "props": {
+            "icon": "lucide:calendar-clock",
+            "title": "Promo Has Ended",
+            "description": "This promotion has concluded. Thank you for participating!",
+            "variant": "info"
+          },
+          "classes": {
+            "outer": "my-6",
+            "icon": "bg-surface-primary text-text-primary",
+            "description": "mt-0"
+          }
+        },
+        {
+          "id": "link-external",
+          "component": "link-external",
+          "props": {
+            "label": "Terms and Conditions apply",
+            "prefixIcon": "lucide:info",
+            "destination": "https://s3.us-east-1.amazonaws.com/assets.giftaway.ph/documents/SB-COR10024_ID4537_TnCs.pdf"
+          },
+          "classes": {
+            "outer": "mt-20"
+          },
+          "attrs": {
+            "target": "_blank",
+            "rel": "noopener noreferrer"
+          }
+        },
+        {
+          "id": "footer",
+          "component": "footer-legal-clause",
+          "props": {
+            "affiliate": "Securtity Bank"
+          }
+        }
+      ]
+    },
+    "register": {
+      "template": "register-main",
+      "states": ["registration", "success", "expired"],
+      "sections": [
+        {
+          "id": "cover",
+          "component": "cover-image",
+          "props": {
+            "coverUrl": "https://s3.us-east-1.amazonaws.com/assets.giftaway.ph/images/affiliates/securitybank/COR10024_ID4537_CampaignMat-Banner-UTJ-edm.webp"
+          },
+          "classes": {
+            "outer": "-mx-6"
+          },
+          "attrs": {
+            "alt": "cover",
+            "height": "216"
+          }
+        },
+        {
+          "id": "heading",
+          "component": "heading-hero",
+          "props": {
+            "title": "Unwrap the Joy 2025 Promo",
+            "description": "$$Unwrap the joy this holiday season! Spend and be rewarded with up to PHP15,000 eGC when you shop anywhere and reach the accumulated spend requirement using your Security Bank Mastercard! Plus, earn an EXTRA PHP1,000 eGC on your Installment spend.\n\nPromo is open to select cardholders who will receive the communication materials and their unique code for registration via Viber, SMS, In-app inbox or email."
+          }
+        },
+        {
+          "id": "form",
+          "component": "form-register",
+          "state": "registration",
+          "alert": {
+            "component": "alert-card",
+            "map": {
+              "InvalidReferenceNo": {
+                "type": "error",
+                "title": "Your registration was unsuccessful.",
+                "description": "This may be due to incorrect or mismatched details. Please retry with the correct details or contact Security Bank to update records if needed. T&Cs apply. DTIFTEB240462S25."
+              },
+              "AlreadyRegisteredUsername": {
+                "type": "error",
+                "title": "You're already registered.",
+                "description": "Please note that you are only required to register once. Unwrap the joy of earning eGCs when you shop anywhere with your Security Bank Mastercard credit card! T&Cs apply. DTIFTEB240462S25."
+              },
+              "AlreadyRegisteredReferenceNo": {
+                "type": "error",
+                "title": "You're already registered!",
+                "description": "Please note that you are only required to register once. Unwrap the joy of earning eGCs when you shop anywhere with your Security Bank Mastercard credit card! T&Cs apply. DTIFTEB240462S25."
+              }
+            }
+          },
+          "schema": [
+            {
+              "$el": "h1",
+              "children": "Register",
+              "attrs": {
+                "class": "text-2xl font-bold mb-4"
+              }
+            },
+            {
+              "$formkit": "text",
+              "name": "code",
+              "id": "code",
+              "label": "Unique code",
+              "validation": "required|length:8,8"
+            },
+            {
+              "$formkit": "text",
+              "name": "l4",
+              "id": "l4",
+              "label": "Last 4 digits of your Security Bank credit card number",
+              "placeholder": "XXXX",
+              "validation": "required|number|length:4,4"
+            },
+            {
+              "$formkit": "text",
+              "name": "mobileNo",
+              "id": "mobileNo",
+              "label": "Mobile number",
+              "validation": [["required"], ["matches", "/^(09)[0-9]{9}$/"]],
+              "placeholder": "09XX-XXX-XXXX",
+              "validationMessages": {
+                "matches": "Please enter a valid Philippine mobile number."
+              }
+            },
+            {
+              "$formkit": "submit",
+              "type": "submit",
+              "id": "submit",
+              "name": "submit",
+              "label": "Register",
+              "disabled": "$disabled",
+              "children": {
+                "if": "$disabled",
+                "then": {
+                  "$el": "span",
+                  "attrs": {
+                    "class": "w-6 h-6 border-2 border-surface-1 border-r-transparent mr-2 rounded-full animate-spin"
+                  }
+                },
+                "else": "$label"
+              }
+            }
+          ]
+        },
+        {
+          "id": "divider",
+          "component": "divider-horizontal-with-label",
+          "state": "registration",
+          "props": {
+            "label": "Already have an account?"
+          },
+          "classes": {
+            "outer": "mx-6"
+          }
+        },
+        {
+          "id": "link-internal",
+          "component": "link-internal",
+          "state": "registration",
+          "props": {
+            "destination": "/login",
+            "label": "Log in"
+          }
+        },
+        {
+          "id": "alert",
+          "state": "success",
+          "component": "alert-hero-centered",
+          "props": {
+            "icon": "lucide:check",
+            "title": "Your registration was successful.",
+            "description": "Unwrap the joy of earning eGCs when you shop anywhere with your Security Bank Mastercard credit card! T&Cs apply. DTIFTEB240462S25.",
+            "variant": "success",
+            "iconSize": "64"
+          },
+          "classes": {
+            "outer": "my-6"
+          }
+        },
+        {
+          "id": "alert",
+          "state": "expired",
+          "component": "alert-hero-centered",
+          "props": {
+            "icon": "lucide:calendar-clock",
+            "title": "Registration Closed",
+            "description": "The registration period has ended. Thank you for your interest!",
+            "variant": "info"
+          },
+          "classes": {
+            "outer": "my-6",
+            "icon": "text-text-primary",
+            "description": "mt-0"
+          }
+        },
+        {
+          "id": "link-external",
+          "component": "link-external",
+          "props": {
+            "label": "Terms and Conditions apply",
+            "prefixIcon": "lucide:info",
+            "destination": "https://s3.us-east-1.amazonaws.com/assets.giftaway.ph/documents/SB-COR10024_ID4537_TnCs.pdf"
+          },
+          "classes": {
+            "outer": "mt-20"
+          }
+        },
+        {
+          "id": "footer",
+          "component": "footer-legal-clause",
+          "props": {
+            "affiliate": "Securtity Bank"
+          }
+        }
+      ]
+    }
+  },
+  "theme": {
+    "colors": {
+      "--primary": "#07579F",
+      "--primary-soft": "#E2FOFE",
+      "--primary-dark": "#5AABF0",
+      "--primary-dark-soft": "#0F2F4A",
+      "--secondary": "#4B9ECF",
+      "--secondary-soft": "#E7F2F9",
+      "--secondary-dark": "#6CB4E0",
+      "--secondary-dark-soft": "#1A4255"
+    }
+  },
+  "schedule": {
+    "registration": {
+      "startDateTime": "",
+      "endDateTime": "2026/01/31 23:59:59"
+    },
+    "redemption": {
+      "startDateTime": "",
+      "endDateTime": "2026/02/28 23:59:59"
+    }
+  }
+}

@@ -1,0 +1,184 @@
+{
+  "pageHead": {
+    "title": "Security Bank's Weekend Shop & Dine Promo | Giftaway"
+  },
+  "pages": {
+    "register": {
+      "template": "register-main",
+      "states": ["registration", "success", "expired"],
+      "sections": [
+        {
+          "id": "cover",
+          "component": "cover-image",
+          "props": {
+            "coverUrl": "https://s3.us-east-1.amazonaws.com/assets.giftaway.ph/images/affiliates/securitybank/Weekend-Shop-and-Dine-Web.webp"
+          },
+          "classes": {
+            "outer": "-mx-6"
+          },
+          "attrs": {
+            "alt": "cover",
+            "height": "228"
+          }
+        },
+        {
+          "id": "heading",
+          "component": "heading-hero",
+          "props": {
+            "overline": "Security Bank",
+            "title": "Weekend Shop & Dine",
+            "description": "Shop and dine your way to rewards! Earn up to PHP3,000 eGC by completing 10 qualified shopping and dining transactions on weekends with your Security Bank credit card. eGC and minimum spend per transaction vary by card type. Promo runs every Saturday and Sunday from February 28 to May 17, 2026."
+          },
+          "classes": {
+            "outer": "text-left"
+          }
+        },
+        {
+          "id": "form",
+          "component": "form-register",
+          "state": "registration",
+          "alert": {
+            "component": "alert-card",
+            "map": {
+              "InvalidReferenceNo": {
+                "type": "error",
+                "title": "Your registration is unsuccessful.",
+                "description": "$$This may be due to incorrect or mismatched details. Please retry with the correct details or contact Security Bank to update records if needed.\n\nT&Cs apply. DTIFTEB250084,S26."
+              },
+              "AlreadyRegisteredUsername": {
+                "type": "error",
+                "title": "You're already registered.",
+                "description": "$$Please note that you are only required to register once. Keep using your registered Security Bank credit card for shopping and dining on weekends to qualify for the PHP1,500 or PHP3,000 eGC.\n\nT&Cs apply. DTIFTEB250084,S26."
+              },
+              "AlreadyRegisteredReferenceNo": {
+                "type": "error",
+                "title": "Already Registered",
+                "description": "$$Please note that you are only required to register once. Keep using your registered Security Bank credit card for shopping and dining on weekends to qualify for the PHP1,500 or PHP3,000 eGC.\n\nT&Cs apply. DTIFTEB250084,S26."
+              }
+            }
+          },
+          "schema": [
+            {
+              "$el": "h1",
+              "children": "Register",
+              "attrs": {
+                "class": "text-2xl font-bold mb-4"
+              }
+            },
+            {
+              "$formkit": "text",
+              "name": "code",
+              "id": "code",
+              "label": "Unique code",
+              "validation": "required|length:8,8"
+            },
+            {
+              "$formkit": "text",
+              "name": "l4",
+              "id": "l4",
+              "label": "Last 4 digits of your Security Bank credit card number",
+              "placeholder": "XXXX",
+              "validation": "required|number|length:4,4"
+            },
+            {
+              "$formkit": "text",
+              "name": "mobileNo",
+              "id": "mobileNo",
+              "label": "Mobile number",
+              "validation": [["required"], ["matches", "/^(09)[0-9]{9}$/"]],
+              "placeholder": "09XX-XXX-XXXX",
+              "validationMessages": {
+                "matches": "Please enter a valid Philippine mobile number."
+              }
+            },
+            {
+              "$formkit": "submit",
+              "type": "submit",
+              "id": "submit",
+              "name": "submit",
+              "label": "Register",
+              "disabled": "$disabled",
+              "children": {
+                "if": "$disabled",
+                "then": {
+                  "$el": "span",
+                  "attrs": {
+                    "class": "w-6 h-6 border-2 border-surface-1 border-r-transparent mr-2 rounded-full animate-spin"
+                  }
+                },
+                "else": "$label"
+              }
+            }
+          ]
+        },
+        {
+          "id": "alert",
+          "state": "success",
+          "component": "alert-hero-centered",
+          "props": {
+            "title": "Your registration is successful!",
+            "description": "$$Start using your registered Security Bank credit card on your weekend shopping and dining adventures!\n\nT&Cs apply. DTIFTEB250084,S26.",
+            "variant": "success",
+            "iconSize": "80"
+          },
+          "classes": {
+            "outer": "my-6"
+          }
+        },
+        {
+          "id": "alert",
+          "state": "expired",
+          "component": "alert-hero-centered",
+          "props": {
+            "icon": "lucide:calendar-clock",
+            "title": "Registration Closed",
+            "description": "The registration period has ended. Thank you for your interest!",
+            "variant": "info"
+          },
+          "classes": {
+            "outer": "my-6",
+            "icon": "text-text-primary",
+            "description": "mt-0"
+          }
+        },
+        {
+          "id": "link-external",
+          "component": "link-external",
+          "props": {
+            "label": "Terms and Conditions apply",
+            "prefixIcon": "lucide:info",
+            "destination": "https://s3.us-east-1.amazonaws.com/assets.giftaway.ph/images/affiliates/securitybank/Weekend-Shop-and-Dine-Giftaway.webp"
+          },
+          "classes": {
+            "outer": "mt-20"
+          }
+        },
+        {
+          "id": "footer",
+          "component": "footer-legal-clause",
+          "props": {
+            "affiliate": "Securtity Bank"
+          }
+        }
+      ]
+    }
+  },
+  "theme": {
+    "colors": {
+      "--primary": "#07579F",
+      "--primary-soft": "#E2FOFE",
+      "--primary-dark": "#5AABF0",
+      "--primary-dark-soft": "#0F2F4A",
+      "--secondary": "#4B9ECF",
+      "--secondary-soft": "#E7F2F9",
+      "--secondary-dark": "#6CB4E0",
+      "--secondary-dark-soft": "#1A4255"
+    }
+  },
+  "schedule": {
+    "registration": {
+      "startDateTime": "",
+      "endDateTime": "2026/05/17 23:59:59"
+    }
+  }
+}

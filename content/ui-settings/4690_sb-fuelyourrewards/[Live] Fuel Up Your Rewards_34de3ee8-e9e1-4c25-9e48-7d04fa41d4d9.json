@@ -1,0 +1,184 @@
+{
+  "pageHead": {
+    "title": "Security Bank's Fuel Up Your Rewards Promo | Giftaway"
+  },
+  "pages": {
+    "register": {
+      "template": "register-main",
+      "states": ["registration", "success", "expired"],
+      "sections": [
+        {
+          "id": "cover",
+          "component": "cover-image",
+          "props": {
+            "coverUrl": "https://s3.us-east-1.amazonaws.com/assets.giftaway.ph/images/affiliates/securitybank/COR10024_ID4690_Banner_FuelUpYourRewards.webp"
+          },
+          "classes": {
+            "outer": "-mx-6"
+          },
+          "attrs": {
+            "alt": "cover",
+            "height": "263"
+          }
+        },
+        {
+          "id": "heading",
+          "component": "heading-hero",
+          "props": {
+            "overline": "Security Bank",
+            "title": "Fuel Up Your Rewards",
+            "description": "Fuel up and earn more! Get 5% cashback on gas purchases with your Security Bank credit card—earn up to PHP900 total cashback during the promo period. Plus, enjoy an extra PHP500 eGC when you complete 7 qualified transactions. Promo runs from February 13 to April 30, 2026."
+          },
+          "classes": {
+            "outer": "text-left"
+          }
+        },
+        {
+          "id": "form",
+          "component": "form-register",
+          "state": "registration",
+          "alert": {
+            "component": "alert-card",
+            "map": {
+              "InvalidReferenceNo": {
+                "type": "error",
+                "title": "Your registration was unsuccessful.",
+                "description": "This may be due to incorrect or mismatched details. Please retry with the correct details or contact Security Bank to update records if needed. T&Cs apply. DTIFTEB248819,S26."
+              },
+              "AlreadyRegisteredUsername": {
+                "type": "error",
+                "title": "You're already registered.",
+                "description": "Please note that you are only required to register once. Continue using your registered Security Bank credit card for your gas transactions to be eligible for the 5% cashback and PHP500 bonus eGC. T&Cs apply. DTIFTEB248819,S26."
+              },
+              "AlreadyRegisteredReferenceNo": {
+                "type": "error",
+                "title": "You're already registered.",
+                "description": "Please note that you are only required to register once. Continue using your registered Security Bank credit card for your gas transactions to be eligible for the 5% cashback and PHP500 bonus eGC. T&Cs apply. DTIFTEB248819,S26."
+              }
+            }
+          },
+          "schema": [
+            {
+              "$el": "h1",
+              "children": "Register",
+              "attrs": {
+                "class": "text-2xl font-bold mb-4"
+              }
+            },
+            {
+              "$formkit": "text",
+              "name": "code",
+              "id": "code",
+              "label": "Unique code",
+              "validation": "required|length:8,8"
+            },
+            {
+              "$formkit": "text",
+              "name": "l4",
+              "id": "l4",
+              "label": "Last 4 digits of your Security Bank credit card number",
+              "placeholder": "XXXX",
+              "validation": "required|number|length:4,4"
+            },
+            {
+              "$formkit": "text",
+              "name": "mobileNo",
+              "id": "mobileNo",
+              "label": "Mobile number",
+              "validation": [["required"], ["matches", "/^(09)[0-9]{9}$/"]],
+              "placeholder": "09XX-XXX-XXXX",
+              "validationMessages": {
+                "matches": "Please enter a valid Philippine mobile number."
+              }
+            },
+            {
+              "$formkit": "submit",
+              "type": "submit",
+              "id": "submit",
+              "name": "submit",
+              "label": "Register",
+              "disabled": "$disabled",
+              "children": {
+                "if": "$disabled",
+                "then": {
+                  "$el": "span",
+                  "attrs": {
+                    "class": "w-6 h-6 border-2 border-surface-1 border-r-transparent mr-2 rounded-full animate-spin"
+                  }
+                },
+                "else": "$label"
+              }
+            }
+          ]
+        },
+        {
+          "id": "alert",
+          "state": "success",
+          "component": "alert-hero-centered",
+          "props": {
+            "title": "Your registration was successful!",
+            "description": "Use your registered Security Bank credit card for gas transactions and enjoy 5% cashback! T&Cs apply. DTIFTEB248819,S26.",
+            "variant": "success",
+            "iconSize": "64"
+          },
+          "classes": {
+            "outer": "my-6"
+          }
+        },
+        {
+          "id": "alert",
+          "state": "expired",
+          "component": "alert-hero-centered",
+          "props": {
+            "icon": "lucide:calendar-clock",
+            "title": "Registration Closed",
+            "description": "The registration period has ended. Thank you for your interest!",
+            "variant": "info"
+          },
+          "classes": {
+            "outer": "my-6",
+            "icon": "text-text-primary",
+            "description": "mt-0"
+          }
+        },
+        {
+          "id": "link-external",
+          "component": "link-external",
+          "props": {
+            "label": "Terms and Conditions apply",
+            "prefixIcon": "lucide:info",
+            "destination": "https://s3.us-east-1.amazonaws.com/assets.giftaway.ph/documents/COR10024_ID4690_TnCs_FuelUpYourRewards.pdf"
+          },
+          "classes": {
+            "outer": "mt-20"
+          }
+        },
+        {
+          "id": "footer",
+          "component": "footer-legal-clause",
+          "props": {
+            "affiliate": "Securtity Bank"
+          }
+        }
+      ]
+    }
+  },
+  "theme": {
+    "colors": {
+      "--primary": "#07579F",
+      "--primary-soft": "#E2FOFE",
+      "--primary-dark": "#5AABF0",
+      "--primary-dark-soft": "#0F2F4A",
+      "--secondary": "#4B9ECF",
+      "--secondary-soft": "#E7F2F9",
+      "--secondary-dark": "#6CB4E0",
+      "--secondary-dark-soft": "#1A4255"
+    }
+  },
+  "schedule": {
+    "registration": {
+      "startDateTime": "",
+      "endDateTime": "2026/04/30 23:59:59"
+    }
+  }
+}

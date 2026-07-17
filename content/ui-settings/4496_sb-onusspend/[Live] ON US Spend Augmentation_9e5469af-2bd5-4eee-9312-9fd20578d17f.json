@@ -1,0 +1,104 @@
+{
+  "pageHead": {
+    "title": "Security Bank's Elevated rewards for Platinum and World Mastercard credit cardholders promo | Giftaway"
+  },
+  "pages": {
+    "register": {
+      "template": "register-main",
+      "states": ["registration", "success", "expired"],
+      "sections": [
+        {
+          "id": "cover",
+          "component": "cover-image",
+          "props": {
+            "coverUrl": "https://s3.us-east-1.amazonaws.com/assets.giftaway.ph/images/affiliates/securitybank/SB_ON%20US%20Spend%2009_24.webp"
+          },
+          "classes": {
+            "outer": "-mx-6"
+          },
+          "attrs": {
+            "alt": "cover",
+            "height": "216"
+          }
+        },
+        {
+          "id": "heading",
+          "component": "heading-hero",
+          "props": {
+            "title": "Elevated rewards for Platinum and World Mastercard credit cardholders",
+            "description": "Get up to PHP3,500 eGCs when you shop anywhere with your Security Bank Platinum & World Mastercard."
+          }
+        },
+        {
+          "id": "alert",
+          "state": "success",
+          "component": "alert-hero-centered",
+          "props": {
+            "icon": "lucide:check",
+            "title": "Your registration is successful!",
+            "description": "We're happy to inform you that your registration was successful! You're now eligible to earn eGCs with every qualified spend. T&Cs apply. DTIFTEB237605S25.",
+            "variant": "success"
+          },
+          "classes": {
+            "outer": "my-6"
+          }
+        },
+        {
+          "id": "alert",
+          "component": "alert-hero-centered",
+          "props": {
+            "icon": "lucide:calendar-clock",
+            "title": "Registration Closed",
+            "description": "The registration period has ended. Thank you for your interest!"
+          },
+          "classes": {
+            "outer": "my-6",
+            "icon": "bg-surface-primary text-text-primary",
+            "description": "mt-0"
+          }
+        },
+        {
+          "id": "link-external",
+          "component": "link-external",
+          "props": {
+            "label": "Terms and Conditions apply",
+            "prefixIcon": "lucide:info",
+            "destination": "https://s3.us-east-1.amazonaws.com/assets.giftaway.ph/documents/%5BConfirmed%5D%20SB-TC-Q4%20Engagement_ON%20Us%20Augmentation.pdf"
+          },
+          "classes": {
+            "outer": "mt-20"
+          }
+        },
+        {
+          "id": "footer",
+          "component": "footer-legal-clause",
+          "props": {
+            "affiliate": "Securtity Bank"
+          }
+        }
+      ]
+    }
+  },
+  "theme": {
+    "colors": {
+      "--primary": "#07579F",
+      "--primary-soft": "#E2FOFE",
+      "--primary-dark": "#5AABF0",
+      "--primary-dark-soft": "#0F2F4A",
+      "--secondary": "#4B9ECF",
+      "--secondary-soft": "#E7F2F9",
+      "--secondary-dark": "#6CB4E0",
+      "--secondary-dark-soft": "#1A4255"
+    }
+  },
+  "schedule": {
+    "registration": {
+      "startDateTime": "",
+      "endDateTime": "2025/11/02 23:59:59"
+    },
+    "redemption": {
+      "startDateTime": "",
+      "endDateTime": "2025/12/31 23:59:59"
+    }
+  }
+}

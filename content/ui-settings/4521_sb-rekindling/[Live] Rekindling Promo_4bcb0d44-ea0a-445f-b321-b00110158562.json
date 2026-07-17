@@ -1,0 +1,90 @@
+{
+  "pageHead": {
+    "title": "Security Bank's Rekindling Promo | Giftaway"
+  },
+  "pages": {
+    "register": {
+      "template": "register-main",
+      "states": ["registration", "success", "expired"],
+      "sections": [
+        {
+          "id": "cover",
+          "component": "cover-image",
+          "props": {
+            "coverUrl": "https://s3.us-east-1.amazonaws.com/assets.giftaway.ph/images/affiliates/securitybank/Engagement%28Rekindling-Promo%29Giftaway%20Banner.webp"
+          },
+          "classes": {
+            "outer": "-mx-6"
+          },
+          "attrs": {
+            "alt": "cover",
+            "height": "216"
+          }
+        },
+        {
+          "id": "heading",
+          "component": "heading-hero",
+          "props": {
+            "title": "Rekindling Promo",
+            "description": "Get up to PHP5,000 eGC when you shop anywhere with your Security Bank credit card! Promo is open only to select cardholders who will receive the communication materials and their unique code for registration via SBC In-App Inbox, Viber, SMS, or email."
+          }
+        },
+        {
+          "id": "alert",
+          "component": "alert-hero-centered",
+          "props": {
+            "icon": "lucide:calendar-clock",
+            "title": "Registration Closed",
+            "description": "The registration period has ended. Thank you for your interest!"
+          },
+          "classes": {
+            "outer": "my-6",
+            "icon": "bg-surface-primary text-text-primary",
+            "description": "mt-0"
+          }
+        },
+        {
+          "id": "link-external",
+          "component": "link-external",
+          "props": {
+            "label": "Terms and Conditions apply",
+            "prefixIcon": "lucide:info",
+            "destination": "https://s3.us-east-1.amazonaws.com/assets.giftaway.ph/documents/TC-Q42025%20Engagement%20Rekindling%20Campaign1%20-SB.pdf"
+          },
+          "classes": {
+            "outer": "mt-20"
+          }
+        },
+        {
+          "id": "footer",
+          "component": "footer-legal-clause",
+          "props": {
+            "affiliate": "Securtity Bank"
+          }
+        }
+      ]
+    }
+  },
+  "theme": {
+    "colors": {
+      "--primary": "#07579F",
+      "--primary-soft": "#E2FOFE",
+      "--primary-dark": "#5AABF0",
+      "--primary-dark-soft": "#0F2F4A",
+      "--secondary": "#4B9ECF",
+      "--secondary-soft": "#E7F2F9",
+      "--secondary-dark": "#6CB4E0",
+      "--secondary-dark-soft": "#1A4255"
+    }
+  },
+  "schedule": {
+    "registration": {
+      "startDateTime": "",
+      "endDateTime": "2025/11/02 23:59:59"
+    },
+    "redemption": {
+      "startDateTime": "",
+      "endDateTime": ""
+    }
+  }
+}

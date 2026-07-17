@@ -1,0 +1,140 @@
+{
+  "pageHead": {
+    "title": "OMD Missions | Giftaway"
+  },
+  "pages": {
+    "home": {
+      "template": "home-main",
+      "sections": [
+        {
+          "id": "programs",
+          "component": "promo-wallet",
+          "props": {
+            "programs": [
+              {
+                "campaignId": "d60a97fe-c440-48c7-9282-0ae1fa6edeb4",
+                "component": "card-program-with-drawer",
+                "title": "OMD Promo Campaign",
+                "drawerTitle": "Mission",
+                "description": "Get up to P500 voucher when you spend online with your BPI Credit Card",
+                "iconUrl": "https://s3.us-east-1.amazonaws.com/assets.giftaway.ph/images/affiliates/bpi-omd/%F0%9F%92%B3.png",
+                "unit": {
+                  "currency": {
+                    "prefix": "",
+                    "suffix": ""
+                  },
+                  "label": {
+                    "current": "Spend",
+                    "target": ["Spend Required", "Spend Required"],
+                    "remaining": ["Spend to Go", "Spend to Go"]
+                  }
+                },
+                "details": [],
+                "colors": {
+                  "--primary": "#F99C16",
+                  "--primary-soft": "#FFF4EB",
+                  "--primary-dark": "#FFB74D",
+                  "--primary-dark-soft": "#4A3218",
+                  "--secondary": "#B11116",
+                  "--secondary-soft": "#FCE3E4",
+                  "--secondary-dark": "#E63946",
+                  "--secondary-dark-soft": "#4A1517"
+                }
+              },
+              {
+                "campaignId": "630a0fea-a21e-412e-b05a-68e21c3e4d7e",
+                "component": "card-program-with-drawer",
+                "title": "BPI Spend Spark Promo",
+                "drawerTitle": "Mission",
+                "description": "Get up to Php 2,500 cashback when you use your BPI Credit Card and complete your spend goals!",
+                "iconUrl": "https://s3.us-east-1.amazonaws.com/assets.giftaway.ph/images/affiliates/bpi-omd/%F0%9F%92%B3.png",
+                "unit": {
+                  "currency": {
+                    "prefix": "P",
+                    "suffix": ""
+                  },
+                  "label": {
+                    "current": ["Current Spend", "Current Spend"],
+                    "target": ["Spend Required", "Spend Required"],
+                    "remaining": ["Spend to Go", "Spend to Go"]
+                  }
+                },
+                "details": [
+                  {
+                    "title": "How it works",
+                    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, tempora?"
+                  },
+                  {
+                    "title": "Lorem ipsum dolor",
+                    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, tempora?"
+                  }
+                ],
+                "colors": {
+                  "--primary": "#F99C16",
+                  "--primary-soft": "#FFF4EB",
+                  "--primary-dark": "#FFB74D",
+                  "--primary-dark-soft": "#4A3218",
+                  "--secondary": "#B11116",
+                  "--secondary-soft": "#FCE3E4",
+                  "--secondary-dark": "#E63946",
+                  "--secondary-dark-soft": "#4A1517"
+                }
+              },
+              {
+                "campaignId": "5b611822-b06c-4a27-8a03-2d87eb920af4",
+                "component": "card-program-with-drawer",
+                "title": "BPI Essentials Migration Promo",
+                "drawerTitle": "Mission",
+                "description": "Get up to ₱300 free eGCs when you reach the required spends with your BPI Credit Card",
+                "iconUrl": "https://s3.us-east-1.amazonaws.com/assets.giftaway.ph/images/affiliates/bpi-omd/%F0%9F%92%B3.png",
+                "unit": {
+                  "currency": {
+                    "prefix": "",
+                    "suffix": ""
+                  },
+                  "label": {
+                    "current": "Spend",
+                    "target": ["Spend Required", "Spend Required"],
+                    "remaining": ["Spend to Go", "Spend to Go"]
+                  }
+                },
+                "details": [
+                  {
+                    "title": "How it works",
+                    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, tempora?"
+                  },
+                  {
+                    "title": "Lorem ipsum dolor",
+                    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, tempora?"
+                  }
+                ],
+                "colors": {
+                  "--primary": "#F99C16",
+                  "--primary-soft": "#FFF4EB",
+                  "--primary-dark": "#FFB74D",
+                  "--primary-dark-soft": "#4A3218",
+                  "--secondary": "#B11116",
+                  "--secondary-soft": "#FCE3E4",
+                  "--secondary-dark": "#E63946",
+                  "--secondary-dark-soft": "#4A1517"
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "theme": {
+    "colors": {
+      "--primary": "#F99C16",
+      "--primary-soft": "#FFF4EB",
+      "--primary-dark": "#FFB74D",
+      "--primary-dark-soft": "#4A3218",
+      "--secondary": "#B11116",
+      "--secondary-soft": "#FCE3E4",
+      "--secondary-dark": "#E63946",
+      "--secondary-dark-soft": "#4A1517"
+    }
+  }
+}

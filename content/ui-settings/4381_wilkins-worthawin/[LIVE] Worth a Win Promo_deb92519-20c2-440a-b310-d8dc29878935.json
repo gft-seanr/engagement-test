@@ -1,0 +1,206 @@
+{
+  "execution": "single",
+  "pageHead": {
+    "title": "Wilkins' Quench Your Thirst, Grab Your Reward Promo | Giftaway"
+  },
+  "pages": {
+    "home": {
+      "template": "home-main",
+      "sections": [
+        {
+          "id": "cover",
+          "component": "cover-image",
+          "props": {
+            "coverUrl": "https://s3.us-east-1.amazonaws.com/assets.giftaway.ph/images/affiliates/wilkins/wilkins-cover.webp"
+          },
+          "classes": {
+            "outer": "-mx-6"
+          },
+          "attrs": {
+            "alt": "Wilkins Quench Your Thirst, Grab Your Reward Cover",
+            "height": "240"
+          }
+        },
+        {
+          "id": "heading",
+          "component": "heading-hero",
+          "props": {
+            "title": "Quench Your Thirst, Grab Your Reward!",
+            "description": "Buy a 5-Liter and a 7-Liter Wilkins bottled water and get a P50 reward!"
+          },
+          "classes": {
+            "outer": "text-left"
+          }
+        },
+        {
+          "id": "campaigns",
+          "component": "reward-redemption",
+          "states": ["redeem", "success"],
+          "sections": [
+            {
+              "id": "alert",
+              "state": "redeem",
+              "component": "alert-hero-centered",
+              "props": {
+                "icon": "lucide:circle-alert",
+                "title": "All Vouchers Have Been Redeemed",
+                "description": "Thank you for participating in the Wilkins promo! All of our limited, first-come, first-served vouchers have now been redeemed, but you can still claim your redeemed vouchers in your chosen merchant. Hope to see you at our next promo!"
+              },
+              "classes": {
+                "outer": "my-6",
+                "icon": "bg-surface-primary text-text-primary",
+                "description": "mt-4 p-4 rounded-lg border border-yellow-500 bg-yellow-50 dark:bg-orange-900/20 "
+              }
+            },
+            {
+              "id": "redeem",
+              "component": "form-redeem",
+              "state": "success",
+              "alert": {
+                "component": "alert-card",
+                "props": {
+                  "hasIcon": true,
+                  "classes": {
+                    "wrapper": "bg-yellow-50 border-yellow-500",
+                    "icon": "text-yellow-500"
+                  }
+                },
+                "map": {
+                  "AlreadyRedeemed": {
+                    "type": "error",
+                    "title": "Already Redeemed",
+                    "description": "The promo code you entered has already been redeemed. Please check the code and try again."
+                  },
+                  "TokenNotFound": {
+                    "type": "error",
+                    "title": "Redemption Unsuccessful",
+                    "description": "Please double check the code printed on your Wilkins bottle and try again."
+                  },
+                  "WeeklyLimitReached": {
+                    "type": "error",
+                    "title": "Weekly Limit Reached",
+                    "description": "Redemptions for this promo are closed for the week. You can redeem again next week."
+                  },
+                  "DailyLimitReached": {
+                    "type": "error",
+                    "title": "Daily Redemption Limit Reached",
+                    "description": "You've reached the maximum number of redemptions allowed today. Please try again tomorrow."
+                  },
+                  "Expired": {
+                    "type": "error",
+                    "title": "Redemption Code Expired",
+                    "description": "This redemption code is no longer valid."
+                  }
+                }
+              },
+              "schema": [
+                {
+                  "$el": "h1",
+                  "children": "Redeem",
+                  "attrs": {
+                    "class": "text-3xl font-bold mb-4"
+                  }
+                },
+                {
+                  "$formkit": "text",
+                  "name": "voucher",
+                  "id": "voucher",
+                  "label": "Promo Code",
+                  "validation": "required|length:10,10",
+                  "placeholder": "XXXXXXXX"
+                },
+                {
+                  "$formkit": "text",
+                  "name": "mobile",
+                  "id": "mobile",
+                  "label": "Mobile Number",
+                  "validation": [["required"], ["matches", "/^(09)[0-9]{9}$/"]],
+                  "placeholder": "09XX-XXX-XXXX",
+                  "validationMessages": {
+                    "matches": "Please enter a valid Philippine mobile number."
+                  }
+                },
+                {
+                  "$formkit": "text",
+                  "name": "retypemobile",
+                  "id": "retypemobile",
+                  "label": "Retype Mobile Number",
+                  "validation": "required|confirm:mobile",
+                  "placeholder": "09XX-XXX-XXXX",
+                  "validation-messages": {
+                    "required": "Please retype your mobile number.",
+                    "confirm": "Mobile number do not match the one entered in the previous field. Please check and try again."
+                  }
+                },
+                {
+                  "$formkit": "submit",
+                  "type": "submit",
+                  "id": "submit",
+                  "name": "submit",
+                  "label": "Redeem",
+                  "disabled": "$disabled",
+                  "children": {
+                    "if": "$disabled",
+                    "then": {
+                      "$el": "span",
+                      "attrs": {
+                        "class": "w-6 h-6 border-2 border-surface-1 border-r-transparent mr-2 rounded-full animate-spin"
+                      }
+                    },
+                    "else": "$label"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "alert-success",
+              "component": "alert-hero-centered",
+              "state": "success",
+              "props": {
+                "variant": "success",
+                "icon": "lucide:check",
+                "title": "Reward Claimed",
+                "description": "Your reward is on its way. Please expect an SMS and e-mail shortly with the details of your reward."
+              },
+              "classes": {
+                "icon": "bg-gradient-to-b from-[#3b6ec5] to-[#002e94] border-blue-900"
+              }
+            },
+            {
+              "id": "reward-card",
+              "component": "card-info",
+              "state": "success",
+              "props": {
+                "iconUrl": "https://s3.us-east-1.amazonaws.com/assets.giftaway.ph/images/engagement/giftaway-logo.png",
+                "title": "P50 Universal eGift",
+                "description": ""
+              }
+            }
+          ]
+        },
+        {
+          "id": "link-external",
+          "component": "link-external",
+          "props": {
+            "label": "Terms and Conditions apply",
+            "prefixIcon": "lucide:info",
+            "destination": "https://s3.us-east-1.amazonaws.com/assets.giftaway.ph/documents/2025%20Worth%20a%20Win%20with%20Wilkins%20Distilled%20Promotion%20Mechanics_For%20giftaway%20sharing_T%26C.pdf"
+          }
+        },
+        {
+          "id": "footer",
+          "component": "footer-legal-clause",
+          "props": {
+            "affiliate": "Wilkins"
+          }
+        }
+      ]
+    }
+  },
+  "theme": {
+    "colors": {
+      "--primary": "#003197",
+      "--primary-soft": "#3B7BFF"
+    }
+  }
+}

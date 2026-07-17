@@ -1,0 +1,183 @@
+{
+  "pageHead": {
+    "title": "Security Bank's Low FX Fee Promo | Giftaway"
+  },
+  "pages": {
+    "register": {
+      "template": "register-main",
+      "states": ["registration", "success", "expired"],
+      "sections": [
+        {
+          "id": "cover",
+          "component": "cover-image",
+          "props": {
+            "coverUrl": "https://s3.us-east-1.amazonaws.com/assets.giftaway.ph/images/affiliates/securitybank/COR10024_ID4563_CampaignMat-Banner.webp"
+          },
+          "classes": {
+            "outer": "-mx-6"
+          },
+          "attrs": {
+            "alt": "cover",
+            "height": "216"
+          }
+        },
+        {
+          "id": "heading",
+          "component": "heading-hero",
+          "props": {
+            "title": "Low FX Fee Promo",
+            "description": "$$Get the most value when you shop overseas! Shop, dine and indulge on your adventures abroad with a low 1.6% foreign exchange fee when you use your Security Bank credit card.\n\nPromo is open only to select cardholders who will receive the communication materials and their unique code for registration via SBC In-App Inbox, Viber, SMS, or email."
+          }
+        },
+        {
+          "id": "form",
+          "component": "form-register",
+          "state": "registration",
+          "alert": {
+            "component": "alert-card",
+            "map": {
+              "InvalidReferenceNo": {
+                "type": "error",
+                "title": "We regret to inform you of your unsuccessful registration.",
+                "description": "This may be due to incorrect or mismatched details. Please retry with the correct details or contact Security Bank to update records if needed. T&Cs apply. DTIFTEB XXXXXXS25."
+              },
+              "AlreadyRegisteredUsername": {
+                "type": "error",
+                "title": "You're already registered!",
+                "description": "You're already registered for the promo! Keep using your Security Bank credit card for your overseas spend with low foreign exchange fees. T&Cs apply. DTIFTEBXXXXXXS25."
+              },
+              "AlreadyRegisteredReferenceNo": {
+                "type": "error",
+                "title": "You're already registered!",
+                "description": "You're already registered for the promo! Keep using your Security Bank credit card for your overseas spend with low foreign exchange fees. T&Cs apply. DTIFTEBXXXXXXS25."
+              }
+            }
+          },
+          "schema": [
+            {
+              "$el": "h1",
+              "children": "Register",
+              "attrs": {
+                "class": "text-2xl font-bold mb-4"
+              }
+            },
+            {
+              "$formkit": "text",
+              "name": "code",
+              "id": "code",
+              "label": "Unique code",
+              "validation": "required|length:8,8"
+            },
+            {
+              "$formkit": "text",
+              "name": "l4",
+              "id": "l4",
+              "label": "Last 4 digits of your Security Bank credit card number",
+              "placeholder": "XXXX",
+              "validation": "required|number|length:4,4"
+            },
+            {
+              "$formkit": "text",
+              "name": "mobileNo",
+              "id": "mobileNo",
+              "label": "Mobile number",
+              "validation": [["required"], ["matches", "/^(09)[0-9]{9}$/"]],
+              "placeholder": "09XX-XXX-XXXX",
+              "validationMessages": {
+                "matches": "Please enter a valid Philippine mobile number."
+              }
+            },
+            {
+              "$formkit": "submit",
+              "type": "submit",
+              "id": "submit",
+              "name": "submit",
+              "label": "Register",
+              "disabled": "$disabled",
+              "children": {
+                "if": "$disabled",
+                "then": {
+                  "$el": "span",
+                  "attrs": {
+                    "class": "w-6 h-6 border-2 border-surface-1 border-r-transparent mr-2 rounded-full animate-spin"
+                  }
+                },
+                "else": "$label"
+              }
+            }
+          ]
+        },
+        {
+          "id": "alert",
+          "state": "success",
+          "component": "alert-hero-centered",
+          "props": {
+            "icon": "lucide:check",
+            "title": "Registration successful!",
+            "description": "You can enjoy a 1.6% low foreign exchange fee on your international purchases. T&Cs apply. DTIFTEBXXXXXXS25.",
+            "variant": "success"
+          },
+          "classes": {
+            "outer": "my-6"
+          }
+        },
+        {
+          "id": "alert",
+          "component": "alert-hero-centered",
+          "state": "expired",
+          "props": {
+            "icon": "lucide:calendar-clock",
+            "title": "Registration Closed",
+            "description": "The registration period has ended. Thank you for your interest!"
+          },
+          "classes": {
+            "outer": "my-6",
+            "icon": "bg-surface-primary text-text-primary",
+            "description": "mt-0"
+          }
+        },
+        {
+          "id": "link-external",
+          "component": "link-external",
+          "props": {
+            "label": "Terms and Conditions apply",
+            "prefixIcon": "lucide:info",
+            "destination": "https://s3.us-east-1.amazonaws.com/assets.giftaway.ph/images/affiliates/securitybank/COR10024_ID4563_CampaignMat-Banner.webp"
+          },
+          "classes": {
+            "outer": "mt-20"
+          }
+        },
+        {
+          "id": "footer",
+          "component": "footer-legal-clause",
+          "props": {
+            "affiliate": "Securtity Bank"
+          }
+        }
+      ]
+    }
+  },
+  "theme": {
+    "colors": {
+      "--primary": "#07579F",
+      "--primary-soft": "#E2FOFE",
+      "--primary-dark": "#5AABF0",
+      "--primary-dark-soft": "#0F2F4A",
+      "--secondary": "#4B9ECF",
+      "--secondary-soft": "#E7F2F9",
+      "--secondary-dark": "#6CB4E0",
+      "--secondary-dark-soft": "#1A4255"
+    }
+  },
+  "schedule": {
+    "registration": {
+      "startDateTime": "",
+      "endDateTime": "2026/01/31 23:59:59"
+    },
+    "redemption": {
+      "startDateTime": "",
+      "endDateTime": ""
+    }
+  }
+}

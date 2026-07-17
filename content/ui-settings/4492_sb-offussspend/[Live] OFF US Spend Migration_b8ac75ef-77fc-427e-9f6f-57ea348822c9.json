@@ -1,0 +1,94 @@
+{
+  "execution": "single",
+  "pageHead": {
+    "title": "Security Bank's Q4 Shop and Earn Promo | Giftaway"
+  },
+  "pages": {
+    "register": {
+      "template": "register-main",
+      "states": ["registration", "success", "expired"],
+      "sections": [
+        {
+          "id": "cover",
+          "component": "cover-image",
+          "props": {
+            "coverUrl": "https://s3.us-east-1.amazonaws.com/assets.giftaway.ph/images/affiliates/securitybank/OFF%20US%20Spend%2009_24.webp"
+          },
+          "classes": {
+            "outer": "-mx-6"
+          },
+          "attrs": {
+            "alt": "cover",
+            "height": "216"
+          }
+        },
+        {
+          "id": "heading",
+          "component": "heading-hero",
+          "props": {
+            "title": "Q4 Shop and Earn Promo",
+            "description": "Get up to PHP7,500 eGCs when you shop anywhere with your Security Bank Platinum & World Mastercard."
+          }
+        },
+        {
+          "id": "alert",
+          "component": "alert-hero-centered",
+          "props": {
+            "icon": "lucide:calendar-clock",
+            "title": "Registration Closed",
+            "description": "The registration period has ended. Thank you for your interest!"
+          },
+          "classes": {
+            "outer": "my-6",
+            "icon": "bg-surface-primary text-text-primary",
+            "description": "mt-0"
+          }
+        },
+        {
+          "id": "link-external",
+          "component": "link-external",
+          "props": {
+            "label": "Terms and Conditions apply",
+            "prefixIcon": "lucide:info",
+            "destination": "https://s3.us-east-1.amazonaws.com/assets.giftaway.ph/documents/%5BConfirmed%5D%20SB-TC-Q4%20Engagement_Off%20Us%20Migration.pdf"
+          },
+          "classes": {
+            "outer": "mt-20"
+          }
+        },
+        {
+          "id": "footer",
+          "component": "footer-legal-clause",
+          "props": {
+            "affiliate": "Securtity Bank"
+          }
+        }
+      ]
+    }
+  },
+  "theme": {
+    "colors": {
+      "--accent-50": "#ddeefe",
+      "--accent-100": "#bfe0fc",
+      "--accent-200": "#7bbef9",
+      "--accent-300": "#3c9ff6",
+      "--accent-400": "#0a7ce1",
+      "--accent-500": "#07579f",
+      "--accent-600": "#06467f",
+      "--accent-700": "#043662",
+      "--accent-800": "#032340",
+      "--accent-900": "#011322",
+      "--accent-950": "#01080f"
+    }
+  },
+  "schedule": {
+    "registration": {
+      "startDateTime": "",
+      "endDateTime": "2025/11/02 23:59:59"
+    },
+    "redemption": {
+      "startDateTime": "",
+      "endDateTime": ""
+    }
+  }
+}

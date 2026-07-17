@@ -1,0 +1,554 @@
+{
+  "execution": "single",
+  "pageHead": {
+    "title": "Metrobank's Spark Joy Promo"
+  },
+  "pages": {
+    "home": {
+      "template": "home-main",
+      "sections": [
+        {
+          "id": "cover",
+          "component": "cover-image",
+          "props": {
+            "coverUrl": "https://s3.us-east-1.amazonaws.com/assets.giftaway.ph/images/affiliates/mcc-universalsite/metrobank-generic-banner.webp"
+          },
+          "classes": {
+            "outer": "-mx-6"
+          }
+        },
+        {
+          "id": "heading",
+          "component": "heading-hero",
+          "props": {
+            "title": "Join the Metrobank Spark Joy Promo",
+            "description": "Take the first step to sparking joy with Metrobank! Simply save more and get rewarded with an eGift of up to PHP 10,000."
+          },
+          "classes": {
+            "outer": "text-start"
+          }
+        },
+        {
+          "id": "campaign",
+          "component": "accumulated-spend-multiple-by-tier",
+          "props": {
+            "rewards": [
+              {
+                "tier": 1,
+                "title": "₱300 eGC",
+                "description": "For ₱15K to <25K ADB"
+              },
+              {
+                "tier": 2,
+                "title": "₱500 eGC",
+                "description": "For ₱25K to <50K ADB"
+              },
+              {
+                "tier": 3,
+                "title": "₱1,500 eGC",
+                "description": "For ₱50K to <100K ADB"
+              },
+              {
+                "tier": 4,
+                "title": "₱2,000 eGC",
+                "description": "For ₱100K to <500K ADB"
+              },
+              {
+                "tier": 5,
+                "title": "₱10,000 eGC",
+                "description": "For ₱500K and up ADB"
+              }
+            ]
+          }
+        },
+        {
+          "id": "how-this-works",
+          "component": "sheet-markdown-content",
+          "props": {
+            "triggerText": "How this works",
+            "triggerIcon": "lucide:message-circle-question",
+            "sheetTitle": "How this works",
+            "sheetContent": "$$**Save ₱15,000 or more** to earn **eGCs worth up to ₱10,000!** Simply maintain your deposit or continue saving for 6 months to boost your reward!\n\n| Average Daily Balance | eGC Reward        |\n|-----------------------|-------------------|\n| ₱15K to <₱25K         | ₱300 eGC          |\n| ₱25K to <₱50K         | ₱500 eGC          |\n| ₱50K to <₱100K        | ₱1,500 eGC        |\n| ₱100K to <₱500K       | ₱2,000 eGC        |\n| ₱500K and up         | ₱10,000 eGC     |"
+          },
+          "classes": {
+            "trigger": "mt-6"
+          }
+        },
+        {
+          "id": "footer",
+          "component": "footer-legal-clause",
+          "props": {
+            "affiliate": "Metrobank"
+          }
+        }
+      ]
+    },
+    "login": {
+      "template": "login-with-otp",
+      "states": ["login", "otp", "success", "expired"],
+      "sections": [
+        {
+          "id": "cover",
+          "component": "cover-image",
+          "props": {
+            "coverUrl": "https://s3.us-east-1.amazonaws.com/assets.giftaway.ph/images/affiliates/mcc-universalsite/metrobank-generic-banner.webp"
+          },
+          "classes": {
+            "outer": "-mx-6"
+          }
+        },
+        {
+          "id": "heading",
+          "component": "heading-hero",
+          "props": {
+            "title": "Join the Metrobank Spark Joy Promo",
+            "description": "Take the first step to sparking joy with Metrobank! Simply save more and get rewarded with an eGift of up to PHP 10,000."
+          },
+          "classes": {
+            "outer": "text-start"
+          }
+        },
+        {
+          "id": "form-login",
+          "component": "form-login",
+          "state": "login",
+          "alert": {
+            "component": "alert-card",
+            "map": {
+              "InvalidUserPassword": {
+                "type": "error",
+                "title": "Invalid Mobile Number",
+                "description": "The mobile number is either invalid or not yet registered for this promotion."
+              }
+            }
+          },
+          "schema": [
+            {
+              "$el": "h1",
+              "children": "Login",
+              "attrs": {
+                "class": "text-2xl font-bold mb-8"
+              }
+            },
+            {
+              "$formkit": "tel",
+              "name": "mobileno",
+              "id": "mobileno",
+              "label": "Mobile Number",
+              "validation": [["required"], ["matches", "/^(09)[0-9]{9}$/"]],
+              "placeholder": "09XX-XXX-XXXX",
+              "validationMessages": {
+                "matches": "Please enter your 11-digit Philippine mobile number."
+              }
+            },
+            {
+              "$formkit": "checkbox",
+              "name": "terms",
+              "id": "terms",
+              "label": "This promo treats website is managed by Giftaway. By logging in, the information you provide on the site will be subject to the Terms of Service of Giftaway.",
+              "validation": [["accepted"]],
+              "validationLabel": "Terms and Conditions",
+              "validationMessages": {
+                "accepted": "Agreeing to the terms and condition is required."
+              },
+              "decorator-icon": "check",
+              "classes": {
+                "wrapper": "flex gap-x-1 items-start",
+                "label": "text-xs text-neutral-500 leading-6 text-pretty",
+                "inner": "mt-1 shrink-0",
+                "decorator": "rounded-xs h-[20px] w-[20px]"
+              },
+              "sectionsSchema": {
+                "label": {
+                  "children": [
+                    "This promo treats website is managed by Giftaway. By logging in, the information you provide on the site will be subject to the ",
+                    {
+                      "$el": "a",
+                      "attrs": {
+                        "href": "https://giftaway.ph/terms",
+                        "target": "_blank",
+                        "class": "underline text-primary"
+                      },
+                      "children": "Terms of Service"
+                    },
+                    " of Giftaway."
+                  ]
+                }
+              }
+            },
+            {
+              "$formkit": "submit",
+              "type": "submit",
+              "id": "submit",
+              "name": "submit",
+              "label": "Login",
+              "disabled": "$isPending || $state.valid === false",
+              "children": {
+                "if": "$isPending && $state.valid",
+                "then": {
+                  "$el": "span",
+                  "attrs": {
+                    "class": "w-6 h-6 border-2 border-surface-1 border-r-transparent mr-2 rounded-full animate-spin"
+                  }
+                },
+                "else": "$label"
+              }
+            },
+            {
+              "$el": "p",
+              "attrs": {
+                "class": "text-sm text-center text-text-secondary mt-4 text-pretty"
+              },
+              "children": [
+                "Don't have an account yet? ",
+                {
+                  "$cmp": "NuxtLink",
+                  "props": {
+                    "to": "register",
+                    "class": "text-primary font-semibold"
+                  },
+                  "children": "Register here"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "form-login-otp",
+          "component": "form-login-otp",
+          "state": "otp",
+          "schema": [
+            {
+              "$el": "h1",
+              "children": "Verification",
+              "attrs": {
+                "class": "text-2xl font-bold mb-8"
+              }
+            },
+            {
+              "$formkit": "text",
+              "name": "code",
+              "id": "code",
+              "label": "Enter Verification Code",
+              "validation": "required|length:6,6",
+              "validationMessages": {
+                "length": "Verification code must be 6 digits."
+              },
+              "validationLabel": "Verification Code",
+              "placeholder": "XXXXXX",
+              "help": "We sent a 6-digit verification code to your mobile number.",
+              "attrs": {
+                "inputmode": "numeric",
+                "autocomplete": "one-time-code"
+              },
+              "classes": {
+                "help": "text-neutral-500 text-pretty"
+              },
+              "sectionsSchema": {
+                "help": {
+                  "children": "$: 'We sent a 6-digit verification code to your mobile number ending in ' + $formkitSlice($mobileno, -4) + '.'"
+                }
+              }
+            },
+            {
+              "$formkit": "submit",
+              "type": "submit",
+              "id": "submit",
+              "name": "submit",
+              "label": "Proceed",
+              "disabled": "$isPending || $state.valid === false",
+              "children": {
+                "if": "$isPending && $state.valid",
+                "then": {
+                  "$el": "span",
+                  "attrs": {
+                    "class": "w-6 h-6 border-2 border-surface-1 border-r-transparent mr-2 rounded-full animate-spin"
+                  }
+                },
+                "else": "$label"
+              }
+            }
+          ]
+        },
+        {
+          "id": "how-this-works",
+          "component": "sheet-markdown-content",
+          "props": {
+            "triggerText": "How this works",
+            "triggerIcon": "lucide:message-circle-question",
+            "sheetTitle": "How this works",
+            "sheetContent": "$$**Save ₱15,000 or more** to earn **eGCs worth up to ₱10,000!** Simply maintain your deposit or continue saving for 6 months to boost your reward!\n\n| Average Daily Balance | eGC Reward        |\n|-----------------------|-------------------|\n| ₱15K to <₱25K         | ₱300 eGC          |\n| ₱25K to <₱50K         | ₱500 eGC          |\n| ₱50K to <₱100K        | ₱1,500 eGC        |\n| ₱100K to <₱500K       | ₱2,000 eGC        |\n| ₱500K and up         | ₱10,000 eGC     |"
+          },
+          "classes": {
+            "trigger": "mt-6"
+          }
+        },
+        {
+          "id": "footer",
+          "component": "footer-legal-clause",
+          "props": {
+            "affiliate": "Metrobank"
+          }
+        }
+      ]
+    },
+    "register": {
+      "template": "register-with-otp",
+      "states": ["registration", "otp", "success", "expired"],
+      "sections": [
+        {
+          "id": "cover",
+          "component": "cover-image",
+          "props": {
+            "coverUrl": "https://s3.us-east-1.amazonaws.com/assets.giftaway.ph/images/affiliates/mcc-universalsite/metrobank-generic-banner.webp"
+          },
+          "classes": {
+            "outer": "-mx-6"
+          }
+        },
+        {
+          "id": "heading",
+          "component": "heading-hero",
+          "props": {
+            "title": "Join the Metrobank Spark Joy Promo",
+            "description": "Take the first step to sparking joy with Metrobank! Simply save more and get rewarded with an eGift of up to PHP 10,000."
+          },
+          "classes": {
+            "outer": "text-start"
+          }
+        },
+        {
+          "id": "registration",
+          "component": "form-register",
+          "state": "registration",
+          "alert": {
+            "component": "alert-card",
+            "map": {
+              "InvalidReferenceNo": {
+                "type": "error",
+                "title": "Your registration was unsuccessful",
+                "description": "$$This may be due to incorrect or mismatched details."
+              },
+              "AlreadyRegisteredUsername": {
+                "type": "error",
+                "title": "You’re all set!",
+                "description": "$$You’re already registered for the promo. Head to your account now to check your progress! **[Log In Here](login)**"
+              },
+              "AlreadyRegisteredReferenceNo": {
+                "type": "error",
+                "title": "You’re all set!",
+                "description": "$$You’re already registered for the promo. Head to your account now to check your progress! **[Log In Here](login)**"
+              },
+              "AccountPending": {
+                "type": "error",
+                "title": "Registration Pending",
+                "description": "You have already registered for this promo. Hang tight — you'll receive an SMS confirmation once your registration is verified."
+              }
+            }
+          },
+          "schema": [
+            {
+              "$el": "h1",
+              "children": "Registration",
+              "attrs": {
+                "class": "text-2xl font-bold mb-8"
+              }
+            },
+            {
+              "$formkit": "tel",
+              "name": "mobileno",
+              "id": "mobileno",
+              "label": "Mobile Number",
+              "validation": [["required"], ["matches", "/^(09)[0-9]{9}$/"]],
+              "placeholder": "09XX-XXX-XXXX",
+              "validationMessages": {
+                "matches": "Please enter your 11-digit Philippine mobile number."
+              }
+            },
+            {
+              "$formkit": "checkbox",
+              "name": "terms",
+              "id": "terms",
+              "label": "This promo treats website is managed by Giftaway. By logging in, the information you provide on the site will be subject to the Terms of Service of Giftaway.",
+              "validation": [["accepted"]],
+              "validationLabel": "Terms and Conditions",
+              "validationMessages": {
+                "accepted": "Agreeing to the terms and condition is required."
+              },
+              "decorator-icon": "check",
+              "classes": {
+                "wrapper": "flex gap-x-1 items-start",
+                "label": "text-xs text-neutral-500 leading-6 text-pretty",
+                "inner": "mt-1 shrink-0",
+                "decorator": "rounded-xs h-[20px] w-[20px]"
+              },
+              "sectionsSchema": {
+                "label": {
+                  "children": [
+                    "This promo treats website is managed by Giftaway. By logging in, the information you provide on the site will be subject to the ",
+                    {
+                      "$el": "a",
+                      "attrs": {
+                        "href": "https://giftaway.ph/terms",
+                        "target": "_blank",
+                        "class": "underline text-primary"
+                      },
+                      "children": "Terms of Service"
+                    },
+                    " of Giftaway."
+                  ]
+                }
+              }
+            },
+            {
+              "$formkit": "submit",
+              "type": "submit",
+              "id": "submit",
+              "name": "submit",
+              "label": "Register",
+              "disabled": "$isPending || $state.valid === false",
+              "children": {
+                "if": "$isPending && $state.valid",
+                "then": {
+                  "$el": "span",
+                  "attrs": {
+                    "class": "w-6 h-6 border-2 border-surface-1 border-r-transparent mr-2 rounded-full animate-spin"
+                  }
+                },
+                "else": "$label"
+              }
+            },
+            {
+              "$el": "p",
+              "attrs": {
+                "class": "text-sm text-center text-text-secondary mt-4 text-pretty"
+              },
+              "children": [
+                "Already have an account? ",
+                {
+                  "$cmp": "NuxtLink",
+                  "props": {
+                    "to": "login",
+                    "class": "text-primary font-semibold"
+                  },
+                  "children": "Log in here"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "form-register-otp",
+          "component": "form-register-otp",
+          "state": "otp",
+          "schema": [
+            {
+              "$el": "h1",
+              "children": "Verification",
+              "attrs": {
+                "class": "text-2xl font-bold mb-8"
+              }
+            },
+            {
+              "$formkit": "text",
+              "name": "otp",
+              "id": "otp",
+              "label": "Enter Verification Code",
+              "validation": "required|length:6,6",
+              "validationMessages": {
+                "length": "Verification code must be 6 digits."
+              },
+              "validationLabel": "Verification Code",
+              "placeholder": "XXXXXX",
+              "help": "We sent a 6-digit verification code to your mobile number.",
+              "attrs": {
+                "inputmode": "numeric",
+                "autocomplete": "one-time-code"
+              },
+              "classes": {
+                "help": "text-neutral-500 text-pretty"
+              },
+              "sectionsSchema": {
+                "help": {
+                  "children": "$: 'We sent a 6-digit verification code to your mobile number ending in ' + $formkitSlice($mobileno, -4) + '.'"
+                }
+              }
+            },
+            {
+              "$formkit": "submit",
+              "type": "submit",
+              "id": "submit",
+              "name": "submit",
+              "label": "Proceed",
+              "disabled": "$isPending || $state.valid === false",
+              "children": {
+                "if": "$isPending && $state.valid",
+                "then": {
+                  "$el": "span",
+                  "attrs": {
+                    "class": "w-6 h-6 border-2 border-surface-1 border-r-transparent mr-2 rounded-full animate-spin"
+                  }
+                },
+                "else": "$label"
+              }
+            }
+          ]
+        },
+        {
+          "id": "alert",
+          "state": "success",
+          "component": "alert-hero-centered",
+          "props": {
+            "icon": "lucide:clock-3",
+            "title": "Registration Submitted",
+            "description": "$$Your mobile number is currently being validated. You'll receive a confirmation SMS within 14 banking days.\n\nFor concerns, you may call (02) 88-700-700 or email onlinechannelsupport@metrobank.com.ph with the subject \"Spark Joy Promo.\"",
+            "variant": "success"
+          },
+          "classes": {
+            "outer": "my-6",
+            "description": "text-balance"
+          }
+        },
+        {
+          "id": "how-this-works",
+          "component": "sheet-markdown-content",
+          "props": {
+            "triggerText": "How this works",
+            "triggerIcon": "lucide:message-circle-question",
+            "sheetTitle": "How this works",
+            "sheetContent": "$$**Save ₱15,000 or more** to earn **eGCs worth up to ₱10,000!** Simply maintain your deposit or continue saving for 6 months to boost your reward!\n\n| Average Daily Balance | eGC Reward        |\n|-----------------------|-------------------|\n| ₱15K to <₱25K         | ₱300 eGC          |\n| ₱25K to <₱50K         | ₱500 eGC          |\n| ₱50K to <₱100K        | ₱1,500 eGC        |\n| ₱100K to <₱500K       | ₱2,000 eGC        |\n| ₱500K and up         | ₱10,000 eGC     |"
+          },
+          "classes": {
+            "trigger": "mt-6"
+          }
+        },
+        {
+          "id": "footer",
+          "component": "footer-legal-clause",
+          "props": {
+            "affiliate": "Metrobank"
+          }
+        }
+      ]
+    }
+  },
+  "theme": {
+    "colors": {
+      "--primary": "#059ED8",
+      "--primary-soft": "#EBF9FF",
+      "--primary-dark": "#047EAD",
+      "--primary-dark-soft": "#D1F1FF"
+    },
+    "form": "theme-mcc"
+  },
+  "schedule": {
+    "registration": {
+      "startDateTime": "",
+      "endDateTime": "2026/03/31 23:59:59"
+    },
+    "redemption": {
+      "startDateTime": "",
+      "endDateTime": ""
+    }
+  }
+}

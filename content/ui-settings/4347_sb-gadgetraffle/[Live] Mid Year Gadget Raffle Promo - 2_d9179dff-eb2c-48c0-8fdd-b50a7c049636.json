@@ -1,0 +1,161 @@
+{
+  "execution": "single",
+  "pageHead": {
+    "title": "Security Bank Mid Year Gadget Raffle Promo | Giftaway"
+  },
+  "pages": {
+    "home": {
+      "template": "home-main",
+      "isAuthorized": true,
+      "sections": [
+        {
+          "id": "cover",
+          "component": "cover-image",
+          "props": {
+            "coverUrl": "https://s3.us-east-1.amazonaws.com/assets.giftaway.ph/images/affiliates/securitybank/Midyear-1200-x-628.webp"
+          },
+          "classes": {
+            "outer": "-mx-6"
+          },
+          "attrs": {
+            "alt": "cover",
+            "height": "216"
+          }
+        },
+        {
+          "id": "heading",
+          "component": "heading-hero",
+          "props": {
+            "title": "Raffle Draw",
+            "description": "Draw raffle winners for the Security Bank Mid Year Gadget Raffle Promo."
+          },
+          "classes": {
+            "outer": "text-left"
+          }
+        },
+        {
+          "id": "raffle",
+          "component": "raffle-draw"
+        },
+        {
+          "id": "logout",
+          "component": "button-logout",
+          "props": {
+            "prefixIcon": "lucide:log-out",
+            "label": "Log out"
+          }
+        },
+        {
+          "id": "footer",
+          "component": "footer-legal-clause",
+          "props": {
+            "affiliate": "Securtity Bank"
+          }
+        }
+      ]
+    },
+    "login": {
+      "template": "login-main",
+      "states": ["login", "expired"],
+      "sections": [
+        {
+          "id": "cover",
+          "component": "cover-image",
+          "props": {
+            "coverUrl": "https://s3.us-east-1.amazonaws.com/assets.giftaway.ph/images/affiliates/securitybank/Midyear-1200-x-628.webp"
+          },
+          "classes": {
+            "outer": "-mx-6"
+          },
+          "attrs": {
+            "alt": "cover",
+            "height": "216"
+          }
+        },
+        {
+          "id": "heading",
+          "component": "heading-hero",
+          "props": {
+            "title": "Security Bank Mid Year Gadget Raffle Promo",
+            "description": "Shop and win the latest gadgets or SM Gift Pass weekly! Spend at least PHP1,000 Straight transaction or PHP5,000 on Installment using your Security Bank credit card to earn e-raffle entries!"
+          }
+        },
+        {
+          "id": "form-login",
+          "component": "form-login",
+          "state": "login",
+          "alert": {
+            "component": "alert-card",
+            "map": {
+              "InvalidUserPassword": {
+                "type": "error",
+                "title": "Invalid Email or Passowrd",
+                "description": "The email address or password you entered is incorrect. Please try again."
+              }
+            }
+          },
+          "schema": [
+            {
+              "$el": "h1",
+              "children": "Admin",
+              "attrs": {
+                "class": "text-2xl font-bold mb-4"
+              }
+            },
+            {
+              "$formkit": "text",
+              "id": "email",
+              "name": "email",
+              "label": "Email",
+              "validation": "required|email"
+            },
+            {
+              "$formkit": "password",
+              "id": "password",
+              "name": "password",
+              "label": "Password",
+              "validation": "required"
+            },
+            {
+              "$formkit": "submit",
+              "type": "submit",
+              "id": "submit",
+              "name": "submit",
+              "label": "Log in",
+              "disabled": "$disabled",
+              "children": {
+                "if": "$disabled",
+                "then": {
+                  "$el": "span",
+                  "attrs": {
+                    "class": "w-6 h-6 border-2 border-surface-1 border-r-transparent mr-2 rounded-full animate-spin"
+                  }
+                },
+                "else": "$label"
+              }
+            }
+          ]
+        },
+        {
+          "id": "footer",
+          "component": "footer-legal-clause",
+          "props": {
+            "affiliate": "Securtity Bank"
+          }
+        }
+      ]
+    }
+  },
+  "theme": {
+    "colors": {
+      "--primary": "#07579F",
+      "--primary-soft": "#E2FOFE",
+      "--primary-dark": "#5AABF0",
+      "--primary-dark-soft": "#0F2F4A",
+      "--secondary": "#4B9ECF",
+      "--secondary-soft": "#E7F2F9",
+      "--secondary-dark": "#6CB4E0",
+      "--secondary-dark-soft": "#1A4255"
+    }
+  }
+}

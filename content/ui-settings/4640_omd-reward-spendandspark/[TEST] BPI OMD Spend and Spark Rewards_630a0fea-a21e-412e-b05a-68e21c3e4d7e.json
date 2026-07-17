@@ -1,0 +1,533 @@
+{
+  "pageHead": {
+    "title": "BPI Spend Spark Promo | Giftaway"
+  },
+  "pages": {
+    "home": {
+      "template": "home-main",
+      "sections": [
+        {
+          "id": "cover",
+          "component": "cover-image",
+          "props": {
+            "coverUrl": "https://s3.us-east-1.amazonaws.com/assets.giftaway.ph/images/affiliates/bpi-engagement-test/omd-cover.webp"
+          },
+          "classes": {
+            "outer": "-mx-6"
+          },
+          "attrs": {
+            "alt": "BPI Spend Spark Promo",
+            "height": "256"
+          }
+        },
+        {
+          "id": "heading",
+          "component": "heading-hero",
+          "props": {
+            "title": "BPI Spend Spark Promo",
+            "description": "Get up to Php 2,500 cashback when you use your BPI Credit Card and complete your spend goals!"
+          }
+        },
+        {
+          "id": "campaign",
+          "component": "programs-wrapper",
+          "alert": {
+            "map": {
+              "Unauthorized": {
+                "type": "error",
+                "description": "You have been logged out. Please re-login to continue."
+              }
+            }
+          },
+          "props": {
+            "programs": [
+              {
+                "programId": "adffb48d-76e8-4454-863b-311c43140b11",
+                "component": "accumulated-spend-single-by-group-with-checkbox",
+                "title": "Super Spender",
+                "description": "Reach P20,000 accumulated spend (Inclusive of the by category spends below).",
+                "iconUrl": "https://s3.us-east-1.amazonaws.com/assets.giftaway.ph/images/affiliates/bpi-spend-spark/super-spender-icon.png",
+                "rewards": {
+                  "again": [
+                    {
+                      "tier": 1,
+                      "denominationId": 0,
+                      "merchantId": 0,
+                      "value": 500,
+                      "quantity": 1,
+                      "type": "cashback",
+                      "rewardName": "P500 Cashback Reward",
+                      "merchantName": "",
+                      "targetTitle": "",
+                      "targetDescription": ""
+                    }
+                  ],
+                  "more": [
+                    {
+                      "tier": 1,
+                      "denominationId": 0,
+                      "merchantId": 0,
+                      "value": 500,
+                      "quantity": 1,
+                      "type": "cashback",
+                      "rewardName": "P500 Cashback Reward",
+                      "merchantName": "",
+                      "targetTitle": "",
+                      "targetDescription": ""
+                    }
+                  ]
+                },
+                "progress": {
+                  "again": [
+                    {
+                      "tier": 1,
+                      "title": "",
+                      "description": "",
+                      "hasRedemption": false
+                    }
+                  ],
+                  "more": [
+                    {
+                      "tier": 1,
+                      "title": "",
+                      "description": "",
+                      "hasRedemption": false
+                    }
+                  ]
+                },
+                "unit": {
+                  "currency": {
+                    "prefix": "P",
+                    "suffix": ""
+                  },
+                  "label": {
+                    "current": ["Spent", "Spent"],
+                    "target": [],
+                    "remaining": []
+                  }
+                }
+              },
+              {
+                "programId": "73cda3a0-d91e-4abd-9ced-5f2ce78ec324",
+                "component": "frequency-spend-single-by-group-with-checkbox",
+                "title": "Kickstart Mission",
+                "description": "Spend atleast P1,000 for your first reward.",
+                "iconUrl": "https://s3.us-east-1.amazonaws.com/assets.giftaway.ph/images/affiliates/bpi-spend-spark/kickstart-icon.png",
+                "rewards": {
+                  "again": [
+                    {
+                      "tier": 1,
+                      "denominationId": 0,
+                      "merchantId": 0,
+                      "value": 500,
+                      "quantity": 1,
+                      "type": "gift",
+                      "rewardName": "P500 Cashback Reward",
+                      "merchantName": "",
+                      "targetTitle": "",
+                      "targetDescription": "Spend atleast P1,000 for your first reward."
+                    }
+                  ]
+                },
+                "progress": {
+                  "again": [
+                    {
+                      "tier": 1,
+                      "title": "",
+                      "description": "",
+                      "hasRedemption": false
+                    }
+                  ]
+                },
+                "unit": {
+                  "currency": {
+                    "prefix": "P",
+                    "suffix": ""
+                  },
+                  "label": {
+                    "current": ["Spent", "Spent"],
+                    "target": [],
+                    "remaining": []
+                  }
+                }
+              },
+              {
+                "programId": "3816f3d4-b428-4182-bc16-f082356eb04d",
+                "component": "frequency-spend-single-by-group-with-checkbox",
+                "title": "Everyday Essentials",
+                "description": "Spend at least P2,000 on a single-receipt grocery purchase.",
+                "iconUrl": "https://s3.us-east-1.amazonaws.com/assets.giftaway.ph/images/affiliates/bpi-spend-spark/everyday-essentials-icon.png",
+                "rewards": {
+                  "again": [
+                    {
+                      "tier": 1,
+                      "denominationId": 0,
+                      "merchantId": 0,
+                      "value": 300,
+                      "quantity": 1,
+                      "type": "cashback",
+                      "rewardName": "P300 Cashback Reward",
+                      "merchantName": "",
+                      "targetTitle": "",
+                      "targetDescription": "Spend at least P2,000 on a single-receipt grocery purchase."
+                    }
+                  ],
+                  "more": [
+                    {
+                      "tier": 1,
+                      "denominationId": 0,
+                      "merchantId": 0,
+                      "value": 200,
+                      "quantity": 1,
+                      "type": "gift",
+                      "rewardName": "P200 Cashback Reward",
+                      "merchantName": "",
+                      "targetTitle": "",
+                      "targetDescription": "Spend atleast P1,000 for your first reward."
+                    }
+                  ]
+                },
+                "progress": {
+                  "again": [
+                    {
+                      "tier": 1,
+                      "title": "",
+                      "description": "",
+                      "hasRedemption": false
+                    }
+                  ],
+                  "more": [
+                    {
+                      "tier": 1,
+                      "title": "",
+                      "description": "",
+                      "hasRedemption": false
+                    }
+                  ]
+                },
+                "unit": {
+                  "currency": {
+                    "prefix": "P",
+                    "suffix": ""
+                  },
+                  "label": {
+                    "current": ["Spent", "Spent"],
+                    "target": [],
+                    "remaining": []
+                  }
+                }
+              },
+              {
+                "programId": "177e771d-11e7-45c2-b47d-d56711cb1ade",
+                "component": "frequency-spend-single-by-group-with-checkbox",
+                "title": "Dining Dash",
+                "description": "Spend at least P2,000 on a single-receipt dining, food delivery, or fast food purchase.",
+                "iconUrl": "https://s3.us-east-1.amazonaws.com/assets.giftaway.ph/images/affiliates/bpi-spend-spark/dining-dash-icon.png",
+                "rewards": {
+                  "again": [
+                    {
+                      "tier": 1,
+                      "denominationId": 0,
+                      "merchantId": 0,
+                      "value": 300,
+                      "quantity": 1,
+                      "type": "cashback",
+                      "rewardName": "P300 Cashback Reward",
+                      "merchantName": "",
+                      "targetTitle": "",
+                      "targetDescription": "Spend at least P2,000 on a single-receipt dining, food delivery, or fast food purchase."
+                    }
+                  ],
+                  "more": [
+                    {
+                      "tier": 1,
+                      "denominationId": 0,
+                      "merchantId": 0,
+                      "value": 200,
+                      "quantity": 1,
+                      "type": "cashback",
+                      "rewardName": "P200 Cashback Reward",
+                      "merchantName": "",
+                      "targetTitle": "",
+                      "targetDescription": "Spend at least P2,000 on a single-receipt dining, food delivery, or fast food purchase."
+                    }
+                  ]
+                },
+                "progress": {
+                  "again": [
+                    {
+                      "tier": 1,
+                      "title": "",
+                      "description": "",
+                      "hasRedemption": false
+                    }
+                  ],
+                  "more": [
+                    {
+                      "tier": 1,
+                      "title": "",
+                      "description": "",
+                      "hasRedemption": false
+                    }
+                  ]
+                },
+                "unit": {
+                  "currency": {
+                    "prefix": "P",
+                    "suffix": ""
+                  },
+                  "label": {
+                    "current": ["Spent", "Spent"],
+                    "target": [],
+                    "remaining": []
+                  }
+                }
+              },
+              {
+                "programId": "b2c36d09-c541-4d10-9ad3-23e40529340e",
+                "title": "Style and Shop",
+                "description": "Spend at least P2,000 on a single-receipt department/retail stores purchase.",
+                "component": "frequency-spend-single-by-group-with-checkbox",
+                "iconUrl": "https://s3.us-east-1.amazonaws.com/assets.giftaway.ph/images/affiliates/bpi-spend-spark/style-and-shop-icon.png",
+                "rewards": {
+                  "again": [
+                    {
+                      "tier": 1,
+                      "denominationId": 0,
+                      "merchantId": 0,
+                      "value": 300,
+                      "quantity": 1,
+                      "type": "cashback",
+                      "rewardName": "P300 Cashback Reward",
+                      "merchantName": "",
+                      "targetTitle": "",
+                      "targetDescription": "Spend at least P2,000 on a single-receipt department/retail stores purchase."
+                    }
+                  ],
+                  "more": [
+                    {
+                      "tier": 1,
+                      "denominationId": 0,
+                      "merchantId": 0,
+                      "value": 200,
+                      "quantity": 1,
+                      "type": "cashback",
+                      "rewardName": "P200 Cashback Reward",
+                      "merchantName": "",
+                      "targetTitle": "",
+                      "targetDescription": "Spend at least P2,000 on a single-receipt department/retail stores purchase."
+                    }
+                  ]
+                },
+                "progress": {
+                  "again": [
+                    {
+                      "tier": 1,
+                      "title": "",
+                      "description": "",
+                      "hasRedemption": false
+                    }
+                  ],
+                  "more": [
+                    {
+                      "tier": 1,
+                      "title": "",
+                      "description": "",
+                      "hasRedemption": false
+                    }
+                  ]
+                },
+                "unit": {
+                  "currency": {
+                    "prefix": "P",
+                    "suffix": ""
+                  },
+                  "label": {
+                    "current": ["Spent", "Spent"],
+                    "target": [],
+                    "remaining": []
+                  }
+                }
+              },
+              {
+                "programId": "805811c9-7da3-4b41-9e13-1ee4fdb7bf6c",
+                "component": "frequency-spend-single-by-group-with-checkbox",
+                "title": "Road Runner",
+                "description": "Spend at least P2,000 on a single-receipt fuel purchase.",
+                "iconUrl": "https://s3.us-east-1.amazonaws.com/assets.giftaway.ph/images/affiliates/bpi-spend-spark/road-runner-icon.png",
+                "rewards": {
+                  "again": [
+                    {
+                      "tier": 1,
+                      "denominationId": 0,
+                      "merchantId": 0,
+                      "value": 300,
+                      "quantity": 1,
+                      "type": "cashback",
+                      "rewardName": "P300 Cashback Reward",
+                      "merchantName": "",
+                      "targetTitle": "",
+                      "targetDescription": "Spend at least P2,000 on a single-receipt fuel purchase."
+                    }
+                  ],
+                  "more": [
+                    {
+                      "tier": 1,
+                      "denominationId": 0,
+                      "merchantId": 0,
+                      "value": 200,
+                      "quantity": 1,
+                      "type": "cashback",
+                      "rewardName": "P200 Cashback Reward",
+                      "merchantName": "",
+                      "targetTitle": "",
+                      "targetDescription": "Spend at least P2,000 on a single-receipt fuel purchase."
+                    }
+                  ]
+                },
+                "progress": {
+                  "again": [
+                    {
+                      "tier": 1,
+                      "title": "",
+                      "description": "",
+                      "hasRedemption": false
+                    }
+                  ],
+                  "more": [
+                    {
+                      "tier": 1,
+                      "title": "",
+                      "description": "",
+                      "hasRedemption": false
+                    }
+                  ]
+                },
+                "unit": {
+                  "currency": {
+                    "prefix": "P",
+                    "suffix": ""
+                  },
+                  "label": {
+                    "current": ["Spent", "Spent"],
+                    "target": [],
+                    "remaining": []
+                  }
+                }
+              },
+              {
+                "programId": "b3999b25-d429-419c-bb26-bc7ea7a7e8af",
+                "component": "frequency-spend-single-by-group-with-checkbox",
+                "title": "Getaway Goals",
+                "description": "Spend at least P2,000 on a single-receipt travel or cross border purchase.",
+                "iconUrl": "https://s3.us-east-1.amazonaws.com/assets.giftaway.ph/images/affiliates/bpi-spend-spark/getaway-goals-icon.png",
+                "rewards": {
+                  "again": [
+                    {
+                      "tier": 1,
+                      "denominationId": 0,
+                      "merchantId": 0,
+                      "value": 300,
+                      "quantity": 1,
+                      "type": "cashback",
+                      "rewardName": "P300 Cashback Reward",
+                      "merchantName": "",
+                      "targetTitle": "",
+                      "targetDescription": "Spend at least P2,000 on a single-receipt travel or cross border purchase."
+                    }
+                  ],
+                  "more": [
+                    {
+                      "tier": 1,
+                      "denominationId": 0,
+                      "merchantId": 0,
+                      "value": 200,
+                      "quantity": 1,
+                      "type": "cashback",
+                      "rewardName": "P200 Cashback Reward",
+                      "merchantName": "",
+                      "targetTitle": "",
+                      "targetDescription": "Spend at least P2,000 on a single-receipt travel or cross border purchase."
+                    }
+                  ]
+                },
+                "progress": {
+                  "again": [
+                    {
+                      "tier": 1,
+                      "title": "",
+                      "description": "",
+                      "hasRedemption": false
+                    }
+                  ],
+                  "more": [
+                    {
+                      "tier": 1,
+                      "title": "",
+                      "description": "",
+                      "hasRedemption": false
+                    }
+                  ]
+                },
+                "unit": {
+                  "currency": {
+                    "prefix": "P",
+                    "suffix": ""
+                  },
+                  "label": {
+                    "current": ["Spent", "Spent"],
+                    "target": [],
+                    "remaining": []
+                  }
+                }
+              }
+            ]
+          }
+        },
+        {
+          "id": "transactions",
+          "component": "drawer-transaction",
+          "props": {
+            "title": "Qualified Transactions",
+            "label": "See qualified transactions",
+            "suffixIcon": "lucide:chevron-right"
+          }
+        },
+        {
+          "id": "footer",
+          "component": "footer-legal-clause",
+          "props": {
+            "affiliate": "BPI"
+          },
+          "classes": {
+            "outer": "mt-20"
+          }
+        }
+      ]
+    }
+  },
+  "theme": {
+    "colors": {
+      "--primary": "#B11116",
+      "--primary-soft": "#FCE3E4",
+      "--primary-dark": "#E63946",
+      "--primary-dark-soft": "#4A1517",
+      "--secondary": "#F99C16",
+      "--secondary-soft": "#FEE6AA",
+      "--secondary-hard": "#C2620C",
+      "--secondary-dark": "#FFB74D",
+      "--secondary-dark-soft": "#4A3218",
+      "--secondary-dark-hard": "#FF9800"
+    }
+  },
+  "schedule": {
+    "registration": {
+      "startDateTime": "",
+      "endDateTime": ""
+    },
+    "redemption": {
+      "startDateTime": "",
+      "endDateTime": ""
+    }
+  }
+}

@@ -1,0 +1,249 @@
+{
+  "pageHead": {
+    "title": "BPI Essentials Migration Promo | Giftaway"
+  },
+  "pages": {
+    "home": {
+      "template": "home-main",
+      "sections": [
+        {
+          "id": "cover",
+          "component": "cover-image",
+          "props": {
+            "coverUrl": "https://s3.us-east-1.amazonaws.com/assets.giftaway.ph/images/affiliates/bpi-engagement-test/bpi-omd-cover-2.webp"
+          },
+          "classes": {
+            "outer": "-mx-6"
+          },
+          "attrs": {
+            "alt": "BPI Spend Spark Promo",
+            "height": "256"
+          }
+        },
+        {
+          "id": "heading",
+          "component": "heading-hero",
+          "props": {
+            "title": "BPI Essentials Migration Promo",
+            "description": "Get up to Php 1,500 cashback when you use your BPI Credit Card and complete your spend goals!"
+          }
+        },
+        {
+          "id": "campaign",
+          "component": "frequency-spend-multiple-by-group",
+          "alert": {
+            "map": {
+              "Unauthorized": {
+                "type": "error",
+                "description": "You have been logged out. Please re-login to continue."
+              }
+            }
+          },
+          "props": {
+            "rewards": {
+              "no": [
+                {
+                  "tier": 1,
+                  "denominationId": 7044,
+                  "merchantId": 6312,
+                  "value": 100,
+                  "quantity": 1,
+                  "type": "gift",
+                  "rewardName": "P100 Universal eGC",
+                  "rewardImageUrl": "https://s3.us-east-1.amazonaws.com/assets.giftaway.ph/images/engagement/giftaway-logo.png"
+                },
+                {
+                  "tier": 2,
+                  "denominationId": 7044,
+                  "merchantId": 6312,
+                  "value": 100,
+                  "quantity": 1,
+                  "type": "gift",
+                  "rewardName": "P100 Universal eGC",
+                  "rewardImageUrl": "https://s3.us-east-1.amazonaws.com/assets.giftaway.ph/images/engagement/giftaway-logo.png"
+                },
+                {
+                  "tier": 3,
+                  "denominationId": 7044,
+                  "merchantId": 6312,
+                  "value": 500,
+                  "quantity": 1,
+                  "type": "gift",
+                  "rewardName": "P100 Universal eGC",
+                  "rewardImageUrl": "https://s3.us-east-1.amazonaws.com/assets.giftaway.ph/images/engagement/giftaway-logo.png"
+                }
+              ],
+              "low": [
+                {
+                  "tier": 3,
+                  "denominationId": 7044,
+                  "merchantId": 6312,
+                  "value": 100,
+                  "quantity": 3,
+                  "type": "gift",
+                  "rewardName": "P300 Universal eGC",
+                  "rewardImageUrl": "https://s3.us-east-1.amazonaws.com/assets.giftaway.ph/images/engagement/giftaway-logo.png"
+                }
+              ],
+              "mid": [
+                {
+                  "tier": 4,
+                  "denominationId": 7044,
+                  "merchantId": 6312,
+                  "value": 100,
+                  "quantity": 1,
+                  "type": "gift",
+                  "rewardName": "P100 Universal eGC",
+                  "rewardImageUrl": "https://s3.us-east-1.amazonaws.com/assets.giftaway.ph/images/engagement/giftaway-logo.png"
+                },
+                {
+                  "tier": 5,
+                  "denominationId": 7044,
+                  "merchantId": 6312,
+                  "value": 100,
+                  "quantity": 1,
+                  "type": "gift",
+                  "rewardName": "P100 Universal eGC",
+                  "rewardImageUrl": "https://s3.us-east-1.amazonaws.com/assets.giftaway.ph/images/engagement/giftaway-logo.png"
+                },
+                {
+                  "tier": 6,
+                  "denominationId": 7044,
+                  "merchantId": 6312,
+                  "value": 100,
+                  "quantity": 1,
+                  "type": "gift",
+                  "rewardName": "P100 Universal eGC",
+                  "rewardImageUrl": "https://s3.us-east-1.amazonaws.com/assets.giftaway.ph/images/engagement/giftaway-logo.png"
+                }
+              ]
+            },
+            "progress": {
+              "no": [
+                {
+                  "tier": 1,
+                  "title": "P100 Universal eGC",
+                  "description": "1st spend of min. P3,000",
+                  "hasRedemption": true
+                },
+                {
+                  "tier": 2,
+                  "title": "P100 Universal eGC",
+                  "description": "2nd spend of min. P3,000",
+                  "hasRedemption": true
+                },
+                {
+                  "tier": 3,
+                  "title": "P100 Universal eGC",
+                  "description": "3rd spend of min. P3,000",
+                  "hasRedemption": true
+                }
+              ],
+              "low": [
+                {
+                  "tier": 1,
+                  "title": "1st Step",
+                  "description": "1st spend of min. P3,000",
+                  "hasRedemption": false
+                },
+                {
+                  "tier": 2,
+                  "title": "2nd Step",
+                  "description": "2nd spend of min. P3,000",
+                  "hasRedemption": false
+                },
+                {
+                  "tier": 3,
+                  "title": "P300 Universal eGC",
+                  "description": "3rd spend of min. P3,000",
+                  "hasRedemption": true
+                }
+              ],
+              "mid": [
+                {
+                  "tier": 1,
+                  "title": "1st Step",
+                  "description": "1st spend of min. P3,000",
+                  "hasRedemption": false
+                },
+                {
+                  "tier": 2,
+                  "title": "2nd Step",
+                  "description": "2nd spend of min. P3,000",
+                  "hasRedemption": false
+                },
+                {
+                  "tier": 3,
+                  "title": "3rd Step",
+                  "description": "3rd spend of min. P3,000",
+                  "hasRedemption": false
+                },
+                {
+                  "tier": 4,
+                  "title": "P100 Universal eGC",
+                  "description": "4th spend of min. P3,000",
+                  "hasRedemption": true
+                },
+                {
+                  "tier": 5,
+                  "title": "P100 Universal eGC",
+                  "description": "5th spend of min. P3,000",
+                  "hasRedemption": true
+                },
+                {
+                  "tier": 6,
+                  "title": "P100 Universal eGC",
+                  "description": "6th spend of min. P3,000",
+                  "hasRedemption": true
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": "transactions",
+          "component": "drawer-transaction",
+          "props": {
+            "title": "Qualified Transactions",
+            "label": "See qualified transactions",
+            "suffixIcon": "lucide:chevron-right"
+          }
+        },
+        {
+          "id": "footer",
+          "component": "footer-legal-clause",
+          "props": {
+            "affiliate": "BPI"
+          },
+          "classes": {
+            "outer": "mt-20"
+          }
+        }
+      ]
+    }
+  },
+  "theme": {
+    "colors": {
+      "--primary": "#B11116",
+      "--primary-soft": "#FCE3E4",
+      "--primary-dark": "#E63946",
+      "--primary-dark-soft": "#4A1517",
+      "--secondary": "#F99C16",
+      "--secondary-soft": "#FEE6AA",
+      "--secondary-hard": "#C2620C",
+      "--secondary-dark": "#FFB74D",
+      "--secondary-dark-soft": "#4A3218",
+      "--secondary-dark-hard": "#FF9800"
+    }
+  },
+  "schedule": {
+    "registration": {
+      "startDateTime": "",
+      "endDateTime": "10/01/2026 12:09:00"
+    },
+    "redemption": {
+      "startDateTime": "",
+      "endDateTime": ""
+    }
+  }
+}

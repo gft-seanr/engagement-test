@@ -1,0 +1,236 @@
+{
+  "execution": "single",
+  "pageHead": {
+    "title": "BPI Play and Win Promo | Giftaway"
+  },
+  "pages": {
+    "home": {
+      "template": "home-main",
+      "isAuthorized": true,
+      "classes": {
+        "outer": "overflow-y-scroll bg-[url('https://s3.us-east-1.amazonaws.com/assets.giftaway.ph/images/affiliates/bpi-pmc/spinthewheelbg.webp')] bg-no-repeat bg-center bg-cover bg-gradient-to-b from-[#da4337] to-[#811b13] bg-accent-primary dark:bg-accent-primary",
+        "wrapper": "px-0 pb-8"
+      },
+      "sections": [
+        {
+          "id": "campaign",
+          "component": "spin-the-wheel",
+          "alert": {
+            "map": {
+              "SERVER_ERROR": {
+                "type": "error",
+                "title": "Unauthorized",
+                "description": "Your session has expired. **[Go to login](login)**"
+              },
+              "WeeklyLimitReached": {
+                "type": "error",
+                "title": "Maximum Spins Reached",
+                "description": "Maximum spins reached. Thanks for playing!"
+              }
+            }
+          },
+          "props": {
+            "campaignRewards": [
+              {
+                "id": "15968",
+                "text": "P5,000",
+                "description": "Discount on your purchase",
+                "successReminder": "Kindly collect your voucher from the BPI marshal",
+                "successFooterMessage": "Valid for redemption only during the event, from October 16, 2025, at 6 PM to October 17, 2025, at 11:59 PM",
+                "img": "https://s3.us-east-1.amazonaws.com/assets.giftaway.ph/images/affiliates/bpi-pmc/reward1%20%281%29.webp"
+              },
+              {
+                "id": "15969",
+                "text": "Gift item",
+                "description": "Complimentary Item from Power Mac Center",
+                "successReminder": "Kindly collect your voucher from the BPI marshal",
+                "successFooterMessage": "Valid for redemption only during the event, from October 16, 2025, at 6 PM to October 17, 2025, at 11:59 PM.\n Gift Item will be given upon claiming of your order of the newest iPhone.",
+                "img": "https://s3.us-east-1.amazonaws.com/assets.giftaway.ph/images/affiliates/bpi-pmc/reward2%20%281%29.webp"
+              }
+            ],
+            "totalSegments": 8
+          },
+          "classes": {}
+        }
+      ]
+    },
+    "login": {
+      "template": "login-with-otp",
+      "states": ["login", "otp", "expired"],
+      "sections": [
+        {
+          "id": "cover",
+          "component": "cover-image",
+          "props": {
+            "coverUrl": "https://s3.us-east-1.amazonaws.com/assets.giftaway.ph/images/affiliates/bpi-pmc/bpi-cover.webp"
+          },
+          "classes": {
+            "outer": "-mx-6"
+          },
+          "attrs": {
+            "alt": "cover",
+            "height": "216"
+          }
+        },
+        {
+          "id": "heading",
+          "component": "heading-hero",
+          "props": {
+            "title": "BPI Play and Win",
+            "description": "Spin the wheel and win a ₱5,000 discount from BPI or a complimentary item from Power Mac Center."
+          }
+        },
+        {
+          "id": "alert",
+          "state": "expired",
+          "component": "alert-hero-centered",
+          "props": {
+            "icon": "lucide:calendar-clock",
+            "title": "Promo Has Ended",
+            "description": "This promotion has concluded. Thank you for participating!"
+          },
+          "classes": {
+            "outer": "my-6",
+            "icon": "bg-surface-primary text-text-primary",
+            "description": "mt-0"
+          }
+        },
+        {
+          "id": "form-login",
+          "component": "form-login",
+          "state": "login",
+          "alert": {
+            "component": "alert-card",
+            "map": {
+              "InvalidUserPassword": {
+                "type": "error",
+                "title": "Invalid Mobile Number",
+                "description": "The mobile number you entered is incorrect. Please try again."
+              }
+            }
+          },
+          "schema": [
+            {
+              "$el": "h1",
+              "children": "Login",
+              "attrs": {
+                "class": "text-2xl font-bold mb-4"
+              }
+            },
+            {
+              "$formkit": "text",
+              "name": "mobileNo",
+              "id": "mobileNo",
+              "label": "Mobile number",
+              "validation": [["required"], ["matches", "/^(09)[0-9]{9}$/"]],
+              "placeholder": "09XX-XXX-XXXX",
+              "validationMessages": {
+                "matches": "Please enter a valid Philippine mobile number."
+              }
+            },
+            {
+              "$formkit": "submit",
+              "type": "submit",
+              "name": "submit",
+              "id": "submit",
+              "label": "Log in",
+              "disabled": "$disabled",
+              "children": {
+                "if": "$disabled",
+                "then": {
+                  "$el": "span",
+                  "attrs": {
+                    "class": "w-6 h-6 border-2 border-surface-1 border-r-transparent mr-2 rounded-full animate-spin"
+                  }
+                },
+                "else": "$label"
+              }
+            }
+          ]
+        },
+        {
+          "id": "form-login-otp",
+          "component": "form-login-otp",
+          "state": "otp",
+          "schema": [
+            {
+              "$el": "h1",
+              "children": "Login Verification",
+              "attrs": {
+                "class": "text-2xl font-bold mb-4"
+              }
+            },
+            {
+              "$formkit": "text",
+              "name": "code",
+              "id": "code",
+              "label": "Verification code",
+              "validation": "required|length:6,6",
+              "help": "Please enter the 6-digit code sent to your mobile number.",
+              "sectionsSchema": {
+                "input": {
+                  "attrs": {
+                    "autofocus": true
+                  }
+                },
+                "help": {
+                  "children": "$: 'Please enter the 6-digit code sent to ' + $mobileNo + '.'"
+                }
+              }
+            },
+            {
+              "$formkit": "submit",
+              "type": "submit",
+              "id": "submit",
+              "name": "submit",
+              "label": "Proceed",
+              "disabled": "$disabled",
+              "children": {
+                "if": "$disabled",
+                "then": {
+                  "$el": "span",
+                  "attrs": {
+                    "class": "w-6 h-6 border-2 border-surface-1 border-r-transparent mr-2 rounded-full animate-spin"
+                  }
+                },
+                "else": "$label"
+              }
+            }
+          ]
+        },
+        {
+          "id": "footer",
+          "component": "footer-component-1",
+          "props": {
+            "affiliate": "BPI"
+          }
+        }
+      ]
+    }
+  },
+  "theme": {
+    "colors": {
+      "--accent-50": "oklch(95.083% 0.02295 17.563)",
+      "--accent-100": "oklch(90.898% 0.04373 17.985)",
+      "--accent-200": "oklch(82.626% 0.08945 19.149)",
+      "--accent-300": "oklch(74.925% 0.13652 20.282)",
+      "--accent-400": "oklch(68.536% 0.1823 23.194)",
+      "--accent-500": "oklch(63.652% 0.22069 25.924)",
+      "--accent-600": "oklch(59.144% 0.23837 28.763)",
+      "--accent-700": "oklch(48.882% 0.1958 28.595)",
+      "--accent-800": "oklch(38.058% 0.15061 28.225)",
+      "--accent-900": "oklch(26.171% 0.10057 27.175)",
+      "--accent-950": "oklch(20.019% 0.07369 27.105)"
+    }
+  },
+  "schedule": {
+    "registration": {
+      "startDateTime": "",
+      "endDateTime": ""
+    },
+    "redemption": {
+      "startDateTime": "",
+      "endDateTime": "2025/12/31 23:59:59"
+    }
+  }
+}

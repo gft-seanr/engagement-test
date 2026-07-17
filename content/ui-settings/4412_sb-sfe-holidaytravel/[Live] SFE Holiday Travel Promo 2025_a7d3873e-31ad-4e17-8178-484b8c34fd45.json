@@ -1,0 +1,460 @@
+{
+  "execution": "single",
+  "pageHead": {
+    "title": "Security Bank Swipe, Fly, and Earn eGCs: Holiday Travel Promo 2025 | Giftaway"
+  },
+  "pages": {
+    "home": {
+      "template": "home-main",
+      "isAuthorized": true,
+      "sections": [
+        {
+          "id": "cover",
+          "component": "cover-image",
+          "props": {
+            "coverUrl": "https://s3.us-east-1.amazonaws.com/assets.giftaway.ph/images/affiliates/securitybank/%5BUPDATED%2007_15%5D%20Holiday-SFE-EDM%201.webp"
+          },
+          "classes": {
+            "outer": "-mx-6"
+          },
+          "attrs": {
+            "height": "216"
+          }
+        },
+        {
+          "id": "heading",
+          "component": "heading-hero",
+          "props": {
+            "title": "Swipe, Fly, and Earn eGCs: Holiday Travel Promo 2025",
+            "description": "$$Get up to PHP10,000 in eGCs when you use your Security Bank credit card for travel-related spend, such as flights, hotels, tours, or international transactions, and meet the minimum accumulated spend requirement for your card.\n\nPromo is open only to select cardholders who will receive the communication materials and their unique code for registration via Viber, SMS, or email."
+          }
+        },
+        {
+          "id": "total-spend",
+          "component": "card-spend-count",
+          "props": {
+            "title": "Qualified spend for this promo",
+            "description": "$$A minimum single receipt worth P1,000 is required to qualify. [T&Cs apply](https://s3.us-east-1.amazonaws.com/assets.giftaway.ph/documents/%5B08_14%5D%20Promo%20Page%20T%26Cs%20-SFE%20Holiday%20Travel%202025.pdf).",
+            "iconUrl": "https://s3.us-east-1.amazonaws.com/assets.giftaway.ph/images/affiliates/securitybank/target-icon.png",
+            "amountDescription": "Total qualified spend as of today."
+          }
+        },
+        {
+          "id": "campaigns",
+          "component": "campaign-standard",
+          "sections": [
+            {
+              "id": "history",
+              "component": "table-transaction",
+              "props": {
+                "title": "Transaction History",
+                "hasTotal": false
+              },
+              "classes": {
+                "outer": "mb-10"
+              }
+            }
+          ]
+        },
+        {
+          "id": "link-external",
+          "component": "link-external",
+          "props": {
+            "label": "Terms and Conditions apply",
+            "prefixIcon": "lucide:info",
+            "destination": "https://s3.us-east-1.amazonaws.com/assets.giftaway.ph/documents/%5B08_14%5D%20Promo%20Page%20T%26Cs%20-SFE%20Holiday%20Travel%202025.pdf"
+          }
+        },
+        {
+          "id": "logout",
+          "component": "button-logout",
+          "props": {
+            "suffixIcon": "lucide:log-out",
+            "label": "Log out"
+          }
+        },
+        {
+          "id": "footer",
+          "component": "footer-legal-clause",
+          "props": {
+            "affiliate": "Securtity Bank"
+          }
+        }
+      ]
+    },
+    "login": {
+      "template": "login-main",
+      "states": ["login", "otp", "expired"],
+      "sections": [
+        {
+          "id": "cover",
+          "component": "cover-image",
+          "props": {
+            "coverUrl": "https://s3.us-east-1.amazonaws.com/assets.giftaway.ph/images/affiliates/securitybank/%5BUPDATED%2007_15%5D%20Holiday-SFE-EDM%201.webp"
+          },
+          "classes": {
+            "outer": "-mx-6"
+          },
+          "attrs": {
+            "height": "216"
+          }
+        },
+        {
+          "id": "heading",
+          "component": "heading-hero",
+          "props": {
+            "title": "Swipe, Fly, and Earn eGCs: Holiday Travel Promo 2025",
+            "description": "$$Get up to PHP10,000 in eGCs when you use your Security Bank credit card for travel-related spend, such as flights, hotels, tours, or international transactions, and meet the minimum accumulated spend requirement for your card.\n\nPromo is open only to select cardholders who will receive the communication materials and their unique code for registration via Viber, SMS, or email."
+          }
+        },
+        {
+          "id": "alert",
+          "state": "login",
+          "component": "alert-hero-centered",
+          "props": {
+            "icon": "lucide:calendar-clock",
+            "title": "Promo Has Ended",
+            "description": "This promotion has concluded. Thank you for participating!"
+          },
+          "classes": {
+            "outer": "my-6",
+            "icon": "bg-surface-primary text-text-primary",
+            "description": "mt-0"
+          }
+        },
+        {
+          "id": "form-login",
+          "component": "form-login",
+          "state": "expired",
+          "alert": {
+            "component": "alert-card",
+            "map": {
+              "InvalidUserPassword": {
+                "type": "error",
+                "title": "Invalid Unique Code or Mobile Number",
+                "description": "The unique code or mobile number you entered is incorrect. Please try again."
+              }
+            }
+          },
+          "schema": [
+            {
+              "$el": "h1",
+              "children": "Login",
+              "attrs": {
+                "class": "text-2xl font-bold mb-4"
+              }
+            },
+            {
+              "$formkit": "text",
+              "name": "code",
+              "id": "code",
+              "label": "Unique code",
+              "validation": "required|length:8,8"
+            },
+            {
+              "$formkit": "text",
+              "name": "mobileNo",
+              "id": "mobileno",
+              "label": "Mobile number",
+              "validation": [["required"], ["matches", "/^(09)[0-9]{9}$/"]],
+              "placeholder": "09XX-XXX-XXXX",
+              "validationMessages": {
+                "matches": "Please enter a valid Philippine mobile number."
+              }
+            },
+            {
+              "$formkit": "submit",
+              "type": "submit",
+              "name": "submit",
+              "id": "submit",
+              "label": "Log in",
+              "disabled": "$disabled",
+              "children": {
+                "if": "$disabled",
+                "then": {
+                  "$el": "span",
+                  "attrs": {
+                    "class": "w-6 h-6 border-2 border-surface-1 border-r-transparent mr-2 rounded-full animate-spin"
+                  }
+                },
+                "else": "$label"
+              }
+            }
+          ]
+        },
+        {
+          "id": "divider",
+          "component": "divider-horizontal-with-label",
+          "state": "expired",
+          "props": {
+            "label": "Don't have an account?"
+          }
+        },
+        {
+          "id": "link-internal",
+          "component": "link-internal",
+          "state": "expired",
+          "props": {
+            "destination": "/register",
+            "label": "Register"
+          }
+        },
+        {
+          "id": "form-login-otp",
+          "component": "form-login-otp",
+          "state": "otp",
+          "schema": [
+            {
+              "$el": "h1",
+              "children": "Login Verification",
+              "attrs": {
+                "class": "text-2xl font-bold mb-4"
+              }
+            },
+            {
+              "$formkit": "text",
+              "name": "code",
+              "id": "code",
+              "label": "Verification code",
+              "validation": "required|length:6,6",
+              "help": "Please enter the 6-digit code sent to your mobile number.",
+              "sectionsSchema": {
+                "input": {
+                  "attrs": {
+                    "autofocus": true
+                  }
+                },
+                "help": {
+                  "children": "$: 'Please enter the 6-digit code sent to ' + $mobileNo + '.'"
+                }
+              }
+            },
+            {
+              "$formkit": "submit",
+              "type": "submit",
+              "id": "submit",
+              "name": "submit",
+              "label": "Proceed",
+              "disabled": "$disabled",
+              "children": {
+                "if": "$disabled",
+                "then": {
+                  "$el": "span",
+                  "attrs": {
+                    "class": "w-6 h-6 border-2 border-surface-1 border-r-transparent mr-2 rounded-full animate-spin"
+                  }
+                },
+                "else": "$label"
+              }
+            }
+          ]
+        },
+        {
+          "id": "link-external",
+          "component": "link-external",
+          "props": {
+            "label": "Terms and Conditions apply",
+            "prefixIcon": "lucide:info",
+            "destination": "https://s3.us-east-1.amazonaws.com/assets.giftaway.ph/documents/%5B08_14%5D%20Promo%20Page%20T%26Cs%20-SFE%20Holiday%20Travel%202025.pdf"
+          },
+          "classes": {
+            "outer": "mt-20"
+          },
+          "attrs": {
+            "target": "_blank",
+            "rel": "noopener noreferrer"
+          }
+        },
+        {
+          "id": "footer",
+          "component": "footer-legal-clause",
+          "props": {
+            "affiliate": "Securtity Bank"
+          }
+        }
+      ]
+    },
+    "register": {
+      "template": "register-main",
+      "states": ["registration", "success", "expired"],
+      "sections": [
+        {
+          "id": "cover",
+          "component": "cover-image",
+          "props": {
+            "coverUrl": "https://s3.us-east-1.amazonaws.com/assets.giftaway.ph/images/affiliates/securitybank/%5BUPDATED%2007_15%5D%20Holiday-SFE-EDM%201.webp"
+          },
+          "classes": {
+            "outer": "-mx-6"
+          },
+          "attrs": {
+            "height": "216"
+          }
+        },
+        {
+          "id": "heading",
+          "component": "heading-hero",
+          "state": "registration",
+          "props": {
+            "title": "Swipe, Fly, and Earn eGCs: Holiday Travel Promo 2025",
+            "description": "$$Get up to PHP10,000 in eGCs when you use your Security Bank credit card for travel-related spend, such as flights, hotels, tours, or international transactions, and meet the minimum accumulated spend requirement for your card.\n\nPromo is open only to select cardholders who will receive the communication materials and their unique code for registration via Viber, SMS, or email."
+          }
+        },
+        {
+          "id": "alert",
+          "state": "registration",
+          "component": "alert-hero-centered",
+          "props": {
+            "icon": "lucide:calendar-clock",
+            "title": "Registration Closed",
+            "description": "The registration period has ended. Thank you for your interest!"
+          },
+          "classes": {
+            "outer": "my-6",
+            "icon": "bg-surface-primary text-text-primary",
+            "description": "mt-0"
+          }
+        },
+        {
+          "id": "form",
+          "component": "form-register",
+          "state": "expired",
+          "alert": {
+            "component": "alert-card",
+            "map": {
+              "InvalidReferenceNo": {
+                "type": "error",
+                "title": "Your registration was unsuccessful",
+                "description": "$$This may be due to incorrect or mismatched details. Please retry with the correct details or contact Security Bank to update records if needed.\n\nT&Cs apply. DTI230711S25."
+              },
+              "AlreadyRegisteredUsername": {
+                "type": "error",
+                "title": "You're already registered",
+                "description": "$$Please note that you are only required to register once. Earn eGCs from your travel & overseas spend with your Security Bank Mastercard credit card!\n\nT&Cs apply. DTI230711S25."
+              },
+              "AlreadyRegisteredReferenceNo": {
+                "type": "error",
+                "title": "You're already registered",
+                "description": "$$Please note that you are only required to register once. Earn eGCs from your travel & overseas spend with your Security Bank Mastercard credit card!\n\nT&Cs apply. DTI230711S25."
+              }
+            }
+          },
+          "schema": [
+            {
+              "$el": "h1",
+              "children": "Register",
+              "attrs": {
+                "class": "text-2xl font-bold mb-4"
+              }
+            },
+            {
+              "$formkit": "text",
+              "name": "code",
+              "id": "code",
+              "label": "Unique code",
+              "validation": "required|length:8,8"
+            },
+            {
+              "$formkit": "text",
+              "name": "l4",
+              "id": "l4",
+              "label": "Last 4 digits of your Security Bank credit card number",
+              "placeholder": "XXXX",
+              "validation": "required|number|length:4,4"
+            },
+            {
+              "$formkit": "text",
+              "name": "mobileno",
+              "id": "mobileno",
+              "label": "Mobile number",
+              "validation": [["required"], ["matches", "/^(09)[0-9]{9}$/"]],
+              "placeholder": "09XX-XXX-XXXX",
+              "validationMessages": {
+                "matches": "Please enter a valid Philippine mobile number."
+              }
+            },
+            {
+              "$formkit": "submit",
+              "type": "submit",
+              "id": "submit",
+              "name": "submit",
+              "label": "Register",
+              "disabled": "$disabled",
+              "children": {
+                "if": "$disabled",
+                "then": {
+                  "$el": "span",
+                  "attrs": {
+                    "class": "w-6 h-6 border-2 border-surface-1 border-r-transparent mr-2 rounded-full animate-spin"
+                  }
+                },
+                "else": "$label"
+              }
+            }
+          ]
+        },
+        {
+          "id": "divider",
+          "component": "divider-horizontal-with-label",
+          "state": "registration",
+          "props": {
+            "label": "Already have an account?"
+          }
+        },
+        {
+          "id": "alert",
+          "state": "success",
+          "component": "alert-hero-centered",
+          "props": {
+            "icon": "lucide:check",
+            "title": "Your registration was successful",
+            "description": "$$Earn eGCs from your travel & overseas spend with your Security Bank Mastercard credit card!\n\nT&Cs apply. DTI230711S25",
+            "variant": "success"
+          },
+          "classes": {
+            "outer": "my-6"
+          }
+        },
+        {
+          "id": "link-internal",
+          "component": "link-internal",
+          "props": {
+            "destination": "/login",
+            "label": "Log in"
+          }
+        },
+        {
+          "id": "link-external",
+          "component": "link-external",
+          "props": {
+            "label": "Terms and Conditions apply",
+            "prefixIcon": "lucide:info",
+            "destination": "https://s3.us-east-1.amazonaws.com/assets.giftaway.ph/documents/%5B08_14%5D%20Promo%20Page%20T%26Cs%20-SFE%20Holiday%20Travel%202025.pdf"
+          },
+          "classes": {
+            "outer": "mt-20"
+          }
+        },
+        {
+          "id": "footer",
+          "component": "footer-legal-clause",
+          "props": {
+            "affiliate": "Securtity Bank"
+          }
+        }
+      ]
+    }
+  },
+  "theme": {
+    "colors": {
+      "--primary": "#07579F",
+      "--primary-soft": "#E2FOFE",
+      "--primary-dark": "#5AABF0",
+      "--primary-dark-soft": "#0F2F4A",
+      "--secondary": "#4B9ECF",
+      "--secondary-soft": "#E7F2F9",
+      "--secondary-dark": "#6CB4E0",
+      "--secondary-dark-soft": "#1A4255"
+    }
+  }
+}

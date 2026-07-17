@@ -1,0 +1,664 @@
+{
+  "pageHead": {
+    "title": "Back-to-Back Perks with your BPI Credit Card | Giftaway"
+  },
+  "pages": {
+    "home": {
+      "template": "home-main",
+      "sections": [
+        {
+          "id": "cover",
+          "component": "cover-image",
+          "props": {
+            "coverUrl": "https://s3.us-east-1.amazonaws.com/assets.giftaway.ph/images/campaigns/bpifoys11/FOYS%2011%20eGC%20Hub_Hero%20Image%201%20%281%29.webp"
+          },
+          "classes": {
+            "outer": "-mx-6"
+          },
+          "attrs": {
+            "height": "256"
+          }
+        },
+        {
+          "id": "heading",
+          "component": "heading-hero",
+          "props": {
+            "title": "Back-to-Back Perks with your BPI Credit Card",
+            "description": "Enjoy up to Php18,000 eGCs and No Annual Fee. Plus, get bonus eGCs when you apply and get approved for 2 cards or activate your card right away."
+          }
+        },
+        {
+          "id": "campaign",
+          "component": "programs-wrapper-with-card-selection",
+          "props": {
+            "programs": [
+              {
+                "programId": "2a404f54-d755-48e3-8d46-b630de5f9560",
+                "component": "accumulated-spend-single-by-card-type",
+                "title": "",
+                "description": "",
+                "iconUrl": "",
+                "rewards": {
+                  "Petron BPI Card": [
+                    {
+                      "tier": 1,
+                      "denominationId": 0,
+                      "merchantId": 0,
+                      "value": 1000,
+                      "quantity": 6,
+                      "type": "gift",
+                      "rewardName": "₱6,000 eGCs",
+                      "rewardDescription": "₱30,000 Spend Goal"
+                    }
+                  ],
+                  "BPI Rewards Card": [
+                    {
+                      "tier": 1,
+                      "denominationId": 0,
+                      "merchantId": 0,
+                      "value": 1000,
+                      "quantity": 6,
+                      "type": "gift",
+                      "rewardName": "₱6,000 eGCs",
+                      "rewardDescription": "₱30,000 Spend Goal"
+                    }
+                  ],
+                  "BPI Gold Rewards Card": [
+                    {
+                      "tier": 1,
+                      "denominationId": 0,
+                      "merchantId": 0,
+                      "value": 1000,
+                      "quantity": 6,
+                      "type": "gift",
+                      "rewardName": "₱6,000 eGCs",
+                      "rewardDescription": "₱30,000 Spend Goal"
+                    }
+                  ],
+                  "BPI Amore Cashback Card": [
+                    {
+                      "tier": 1,
+                      "denominationId": 0,
+                      "merchantId": 0,
+                      "value": 1000,
+                      "quantity": 6,
+                      "type": "gift",
+                      "rewardName": "₱6,000 eGCs",
+                      "rewardDescription": "₱30,000 Spend Goal"
+                    }
+                  ],
+                  "BPI Platinum Rewards Card": [
+                    {
+                      "tier": 1,
+                      "denominationId": 0,
+                      "merchantId": 0,
+                      "value": 1000,
+                      "quantity": 12,
+                      "type": "gift",
+                      "rewardName": "₱12,000 eGCs",
+                      "rewardDescription": "₱60,000 Spend Goal"
+                    }
+                  ],
+                  "BPI Signature Card": [
+                    {
+                      "tier": 1,
+                      "denominationId": 0,
+                      "merchantId": 0,
+                      "value": 1000,
+                      "quantity": 18,
+                      "type": "gift",
+                      "rewardName": "₱18,000 eGCs",
+                      "rewardDescription": "₱90,000 Spend Goal"
+                    }
+                  ]
+                },
+                "progress": {
+                  "Petron BPI Card": [
+                    {
+                      "tier": 1,
+                      "imageUrl": "https://s3.us-east-1.amazonaws.com/assets.giftaway.ph/images/campaigns/bpifoys11/petron.webp",
+                      "hasRedemption": false
+                    }
+                  ],
+                  "BPI Rewards Card": [
+                    {
+                      "tier": 1,
+                      "imageUrl": "https://s3.us-east-1.amazonaws.com/assets.giftaway.ph/images/campaigns/bpifoys11/rewards.webp",
+                      "hasRedemption": false
+                    }
+                  ],
+                  "BPI Gold Rewards Card": [
+                    {
+                      "tier": 1,
+                      "imageUrl": "https://s3.us-east-1.amazonaws.com/assets.giftaway.ph/images/campaigns/bpifoys11/gold.webp",
+                      "hasRedemption": false
+                    }
+                  ],
+                  "BPI Amore Cashback Card": [
+                    {
+                      "tier": 1,
+                      "imageUrl": "https://s3.us-east-1.amazonaws.com/assets.giftaway.ph/images/campaigns/bpifoys11/amore%20cashback.webp",
+                      "hasRedemption": false
+                    }
+                  ],
+                  "BPI Platinum Rewards Card": [
+                    {
+                      "tier": 1,
+                      "imageUrl": "https://s3.us-east-1.amazonaws.com/assets.giftaway.ph/images/campaigns/bpifoys11/platinum.webp",
+                      "hasRedemption": false
+                    }
+                  ],
+                  "BPI Signature Card": [
+                    {
+                      "tier": 1,
+                      "imageUrl": "https://s3.us-east-1.amazonaws.com/assets.giftaway.ph/images/campaigns/bpifoys11/signature.webp",
+                      "hasRedemption": false
+                    }
+                  ]
+                },
+                "unit": {
+                  "currency": {
+                    "prefix": "₱",
+                    "suffix": ""
+                  },
+                  "label": {
+                    "current": ["Spent", "Spent"],
+                    "target": [],
+                    "remaining": []
+                  }
+                }
+              }
+            ]
+          }
+        },
+        {
+          "id": "logout",
+          "component": "button-logout",
+          "props": {
+            "suffixIcon": "lucide:log-out",
+            "label": "Log out"
+          }
+        },
+        {
+          "id": "footer",
+          "component": "footer-legal-clause",
+          "props": {
+            "affiliate": "BPI",
+            "additionalContent": "Terms and conditions apply. Per DTI-FTEB Permit No. 250009, Series of 2026."
+          }
+        }
+      ],
+      "classes": {
+        "wrapper": "gap-11"
+      }
+    },
+    "login": {
+      "template": "login-with-otp",
+      "states": ["login", "otp", "expired"],
+      "sections": [
+        {
+          "id": "cover",
+          "component": "cover-image",
+          "props": {
+            "coverUrl": "https://s3.us-east-1.amazonaws.com/assets.giftaway.ph/images/campaigns/bpifoys11/FOYS%2011%20eGC%20Hub_Hero%20Image%201%20%281%29.webp"
+          },
+          "classes": {
+            "outer": "-mx-6"
+          },
+          "attrs": {
+            "height": "256"
+          }
+        },
+        {
+          "id": "heading",
+          "component": "heading-hero",
+          "props": {
+            "title": "Back-to-Back Perks with your BPI Credit Card",
+            "description": "Enjoy up to Php18,000 eGCs and No Annual Fee. Plus, get bonus eGCs when you apply and get approved for 2 cards or activate your card right away."
+          }
+        },
+        {
+          "id": "form-login",
+          "component": "form-login",
+          "state": "login",
+          "alert": {
+            "component": "alert-card",
+            "map": {
+              "InvalidUserPassword": {
+                "type": "error",
+                "title": "Invalid Promo Code",
+                "description": "The promo code is incorrect. Please try again."
+              }
+            }
+          },
+          "schema": [
+            {
+              "$el": "h1",
+              "children": "Login",
+              "attrs": {
+                "class": "text-xl font-bold mb-6 text-center text-primary"
+              }
+            },
+            {
+              "$formkit": "text",
+              "name": "code",
+              "id": "code",
+              "label": "Promo Code",
+              "validation": "required|length:8,8",
+              "validationLabel": "Promo code",
+              "help": "Your promo code was sent to you by BPI using your registered email address or mobile number."
+            },
+            {
+              "$formkit": "checkbox",
+              "name": "terms",
+              "id": "terms",
+              "label": "I have read and agree to BPI's Privacy Policy and to the Terms & Conditions",
+              "validation": [["accepted"]],
+              "validationLabel": "Terms and Conditions",
+              "validationMessages": {
+                "accepted": "Agreeing to the terms and condition is required."
+              },
+              "decorator-icon": "check",
+              "classes": {
+                "wrapper": "flex gap-x-1 items-start",
+                "label": "text-xs text-neutral-500 leading-6 text-pretty",
+                "inner": "mt-1 shrink-0",
+                "decorator": "rounded-xs h-[20px] w-[20px]"
+              },
+              "sectionsSchema": {
+                "label": {
+                  "children": [
+                    "I have read and agree to BPI's ",
+                    {
+                      "$el": "a",
+                      "attrs": {
+                        "href": "https://www.bpi.com.ph/privacy",
+                        "target": "_blank",
+                        "class": "underline text-primary"
+                      },
+                      "children": "Privacy Policy"
+                    },
+                    "and to the ",
+                    {
+                      "$el": "a",
+                      "attrs": {
+                        "href": "https://l.bpi.com.ph/BTBPERKS",
+                        "target": "_blank",
+                        "class": "underline text-primary"
+                      },
+                      "children": "Terms & Conditions"
+                    },
+                    " of this promo."
+                  ]
+                }
+              }
+            },
+            {
+              "$formkit": "submit",
+              "type": "submit",
+              "name": "submit",
+              "id": "submit",
+              "label": "Log in",
+              "disabled": "$disabled",
+              "children": {
+                "if": "$disabled",
+                "then": {
+                  "$el": "span",
+                  "attrs": {
+                    "class": "w-6 h-6 border-2 border-surface-1 border-r-transparent mr-2 rounded-full animate-spin"
+                  }
+                },
+                "else": "$label"
+              }
+            }
+          ]
+        },
+        {
+          "id": "divider",
+          "component": "divider-horizontal-with-label",
+          "state": "login"
+        },
+        {
+          "id": "link-internal",
+          "component": "markdown",
+          "state": "login",
+          "props": {
+            "tag": "p",
+            "content": "$$Not yet registered? **[Register here](Register)**"
+          },
+          "classes": {
+            "outer": "py-3 text-text-secondary text-center border border-border-neutral rounded-lg h-12 text-sm"
+          }
+        },
+        {
+          "id": "form-login-otp",
+          "component": "form-login-otp",
+          "state": "otp",
+          "schema": [
+            {
+              "$el": "h1",
+              "children": "Verification",
+              "attrs": {
+                "class": "text-xl font-bold mb-6 text-center text-primary"
+              }
+            },
+            {
+              "$formkit": "text",
+              "name": "code",
+              "id": "code",
+              "label": "Enter 6-digit verification code",
+              "validation": "required|length:6,6",
+              "validationLabel": "Verification code",
+              "help": {
+                "if": "$mobileno",
+                "then": "$: 'We sent a verification code to your registered mobile number ' + $mobileno + '.'",
+                "else": "$: 'We sent a verification code to your registered email ' + $email + '.'"
+              },
+              "sectionsSchema": {
+                "input": {
+                  "attrs": {
+                    "autofocus": true
+                  }
+                }
+              }
+            },
+            {
+              "$formkit": "submit",
+              "type": "submit",
+              "id": "submit",
+              "name": "submit",
+              "label": "Proceed",
+              "disabled": "$disabled",
+              "children": {
+                "if": "$disabled",
+                "then": {
+                  "$el": "span",
+                  "attrs": {
+                    "class": "w-6 h-6 border-2 border-surface-1 border-r-transparent mr-2 rounded-full animate-spin"
+                  }
+                },
+                "else": "$label"
+              }
+            }
+          ]
+        },
+        {
+          "id": "alert",
+          "state": "expired",
+          "component": "alert-hero-centered",
+          "props": {
+            "icon": "lucide:calendar-clock",
+            "title": "Promo Has Ended",
+            "description": "This promotion has concluded. Thank you for participating!",
+            "variant": "info"
+          },
+          "classes": {
+            "outer": "my-6",
+            "icon": "bg-surface-primary text-text-primary",
+            "description": "mt-0"
+          }
+        },
+        {
+          "id": "footer",
+          "component": "footer-legal-clause",
+          "props": {
+            "affiliate": "BPI",
+            "additionalContent": "Terms and conditions apply. Per DTI-FTEB Permit No. 250009, Series of 2026."
+          },
+          "classes": {
+            "outer": "mt-14"
+          }
+        }
+      ]
+    },
+    "register": {
+      "template": "register-main",
+      "states": ["registration", "success", "expired"],
+      "sections": [
+        {
+          "id": "cover",
+          "component": "cover-image",
+          "props": {
+            "coverUrl": "https://s3.us-east-1.amazonaws.com/assets.giftaway.ph/images/campaigns/bpifoys11/FOYS%2011%20eGC%20Hub_Hero%20Image%201%20%281%29.webp"
+          },
+          "classes": {
+            "outer": "-mx-6"
+          },
+          "attrs": {
+            "alt": "cover",
+            "height": "256"
+          }
+        },
+        {
+          "id": "heading",
+          "component": "heading-hero",
+          "props": {
+            "title": "Back-to-Back Perks with your BPI Credit Card",
+            "description": "Enjoy up to Php18,000 eGCs and No Annual Fee. Plus, get bonus eGCs when you apply and get approved for 2 cards or activate your card right away."
+          }
+        },
+        {
+          "id": "form",
+          "component": "form-register",
+          "state": "registration",
+          "alert": {
+            "component": "alert-card",
+            "map": {
+              "InvalidReferenceNo": {
+                "type": "error",
+                "title": "Invalid Promo Code",
+                "description": "$$The promo code you entered is invalid.  Please ensure you're using the correct promo code found in the email and/or SMS sent by BPI, and register using your BPI-registered mobile number to complete your registration successfully.\n\nVisit <promo landing page link> for more info. DTI #250009, S26."
+              },
+              "AlreadyRegisteredUsername": {
+                "type": "error",
+                "title": "Already Registered",
+                "description": "$$The email or mobile number you entered is already registered in the promo. You may track your qualified spend and rewards directly within the eGC Hub. **[Go to Login](login)**.\n\n Visit <promo landing page link> for more info. DTI #250009, S26."
+              },
+              "AlreadyRegisteredReferenceNo": {
+                "type": "error",
+                "title": "Already Registered",
+                "description": "$$The promo code you entered is already registered in the promo. You may track your qualified spend and rewards directly within the eGC Hub. **[Go to Login](login)**.\n\n Visit <promo landing page link> for more info. DTI #250009, S26."
+              }
+            }
+          },
+          "schema": [
+            {
+              "$el": "h1",
+              "children": "Register Now",
+              "attrs": {
+                "class": "text-xl font-bold mb-6 text-center text-primary"
+              }
+            },
+            {
+              "$formkit": "text",
+              "name": "code",
+              "id": "code",
+              "label": "Promo code",
+              "validation": "required|length:8,8",
+              "help": "Your promo code was sent to you by BPI using your registered email address or SMS number.",
+              "placeholder": "ABCD1234"
+            },
+            {
+              "$formkit": "text",
+              "name": "contact",
+              "id": "contact",
+              "label": "Mobile number or email address",
+              "validation": [
+                ["required"],
+                ["matches", "/^(09[0-9]{9}|[^\\s@]+@[^\\s@]+\\.[^\\s@]+)$/"]
+              ],
+              "placeholder": "09123456789 or name@example.com",
+              "validationMessages": {
+                "matches": "Please enter a valid Philippine mobile number or email address."
+              }
+            },
+            {
+              "$formkit": "checkbox",
+              "name": "terms",
+              "id": "terms",
+              "label": "By registering, I agree that the information provided will be subject to the Terms of Service of Giftaway and BPI's Privacy Policy and the Terms & Conditions of this promo.",
+              "validation": [["accepted"]],
+              "validationLabel": "Terms and Conditions",
+              "validationMessages": {
+                "accepted": "Agreeing to the terms and condition is required."
+              },
+              "decorator-icon": "check",
+              "classes": {
+                "wrapper": "flex gap-x-1 items-start",
+                "label": "text-xs text-neutral-500 leading-6 text-pretty",
+                "inner": "mt-1 shrink-0",
+                "decorator": "rounded-xs h-[20px] w-[20px]"
+              },
+              "sectionsSchema": {
+                "label": {
+                  "children": [
+                    "By registering, I agree that the information provided will be subject to the ",
+                    {
+                      "$el": "a",
+                      "attrs": {
+                        "href": "https://giftaway.ph/terms",
+                        "target": "_blank",
+                        "class": "underline text-primary"
+                      },
+                      "children": "Terms of Service"
+                    },
+                    " of Giftaway and BPI's ",
+                    {
+                      "$el": "a",
+                      "attrs": {
+                        "href": "https://www.bpi.com.ph/privacy",
+                        "target": "_blank",
+                        "class": "underline text-primary"
+                      },
+                      "children": "Privacy Policy"
+                    },
+                    " and the ",
+                    {
+                      "$el": "a",
+                      "attrs": {
+                        "href": "https://l.bpi.com.ph/BTBPERKS",
+                        "target": "_blank",
+                        "class": "underline text-primary"
+                      },
+                      "children": "Terms & Conditions"
+                    },
+                    " of this promo."
+                  ]
+                }
+              }
+            },
+            {
+              "$formkit": "submit",
+              "type": "submit",
+              "id": "submit",
+              "name": "submit",
+              "label": "Register",
+              "disabled": "$disabled",
+              "children": {
+                "if": "$disabled",
+                "then": {
+                  "$el": "span",
+                  "attrs": {
+                    "class": "w-6 h-6 border-2 border-surface-1 border-r-transparent mr-2 rounded-full animate-spin"
+                  }
+                },
+                "else": "$label"
+              }
+            }
+          ]
+        },
+        {
+          "id": "divider",
+          "component": "divider-horizontal-with-label",
+          "state": "registration"
+        },
+        {
+          "id": "link-internal",
+          "component": "markdown",
+          "state": "registration",
+          "props": {
+            "tag": "p",
+            "content": "$$Already registered? **[Log in here](login)**"
+          },
+          "classes": {
+            "outer": "py-3 text-text-secondary text-center border border-border-neutral rounded-lg h-12 text-sm"
+          }
+        },
+        {
+          "id": "alert",
+          "state": "success",
+          "component": "alert-hero-centered",
+          "props": {
+            "title": "Registration Successful",
+            "description": "$$Thank you for participating in the BPI Back-to-Back Perks promo! You have been successfully registered.\n\nYou may now track your qualified spend and rewards directly within the eGC Hub.  Visit <promo landing page link> for more info. DTI #250009, S26.",
+            "variant": "success",
+            "circled": true
+          }
+        },
+        {
+          "id": "link-internal",
+          "component": "markdown",
+          "state": "success",
+          "props": {
+            "tag": "p",
+            "content": "$$**[Go to Login](login)**"
+          },
+          "classes": {
+            "outer": "py-3 text-text-secondary text-center border border-neutral rounded-lg h-12 text-sm"
+          }
+        },
+        {
+          "id": "alert",
+          "state": "expired",
+          "component": "alert-hero-centered",
+          "props": {
+            "icon": "lucide:calendar-clock",
+            "title": "Registration Closed",
+            "description": "The registration period has ended. Thank you for your interest!",
+            "variant": "info"
+          },
+          "classes": {
+            "outer": "my-6",
+            "icon": "text-text-primary",
+            "description": "mt-0"
+          }
+        },
+        {
+          "id": "footer",
+          "component": "footer-legal-clause",
+          "props": {
+            "affiliate": "BPI",
+            "additionalContent": "Terms and conditions apply. Per DTI-FTEB Permit No. 250009, Series of 2026."
+          },
+          "classes": {
+            "outer": "mt-14"
+          }
+        }
+      ]
+    }
+  },
+  "theme": {
+    "colors": {
+      "--primary": "#B11116",
+      "--primary-soft": "#FCE3E4",
+      "--primary-dark": "#C41F25",
+      "--primary-dark-soft": "#FCE3E4",
+      "--secondary": "#F99C16",
+      "--secondary-soft": "#FEEGAA",
+      "--secondary-hard": "#C2620C",
+      "--secondary-dark": "#F99C16",
+      "--secondary-dark-soft": "#FEEGAA",
+      "--secondary-dark-hard": "#C2620C"
+    }
+  },
+  "schedule": {
+    "registration": {
+      "startDateTime": "",
+      "endDateTime": ""
+    },
+    "redemption": {
+      "startDateTime": "",
+      "endDateTime": ""
+    }
+  }
+}

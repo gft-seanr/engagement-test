@@ -1,0 +1,184 @@
+{
+  "pageHead": {
+    "title": "Security Bank's Summer Installment Campaign | Giftaway"
+  },
+  "pages": {
+    "register": {
+      "template": "register-main",
+      "states": ["registration", "success", "expired"],
+      "sections": [
+        {
+          "id": "cover",
+          "component": "cover-image",
+          "props": {
+            "coverUrl": "https://s3.us-east-1.amazonaws.com/assets.giftaway.ph/images/affiliates/securitybank/Summer-Installment-Cashback-Giftaway.webp"
+          },
+          "classes": {
+            "outer": "-mx-6"
+          },
+          "attrs": {
+            "alt": "cover",
+            "height": "228"
+          }
+        },
+        {
+          "id": "heading",
+          "component": "heading-hero",
+          "props": {
+            "overline": "Security Bank",
+            "title": "Summer Installment Campaign",
+            "description": "$$Your first-month installment is on us when you use your Security Bank Credit Card via 0% ChargeLight Installment or Charge Now, Pay Later at your favorite stores! \n\nFree first-month installment is capped at PHP3,000 to be awarded as cashback 30 days after the promo period."
+          },
+          "classes": {
+            "outer": ""
+          }
+        },
+        {
+          "id": "form",
+          "component": "form-register",
+          "state": "registration",
+          "alert": {
+            "component": "alert-card",
+            "map": {
+              "InvalidReferenceNo": {
+                "type": "error",
+                "title": "Your registration is unsuccessful.",
+                "description": "$$This may be due to incorrect or mismatched details. Please retry with the correct details or contact Security Bank to update records if needed.\n\nFree first-month installment is capped at PHP3,000 to be awarded as cashback 30 days after the promo period. DTIFTEB250095S26."
+              },
+              "AlreadyRegisteredUsername": {
+                "type": "error",
+                "title": "Already Registered",
+                "description": "$$Thank you for participating in the Summer Installment Cashback Campaign! Your Security Bank Credit Card is already registered.\n\nKeep using your card at your favorite stores with 0% ChargeLight Installment or Charge Now, Pay Later and claim your FREE first-month installment.\n\nFree first-month installment is capped at PHP3,000 to be awarded as cashback 30 days after the promo period. DTIFTEB250095S26."
+              },
+              "AlreadyRegisteredReferenceNo": {
+                "type": "error",
+                "title": "Already Registered",
+                "description": "$$Thank you for participating in the Summer Installment Cashback Campaign! Your Security Bank Credit Card is already registered.\n\nKeep using your card at your favorite stores with 0% ChargeLight Installment or Charge Now, Pay Later and claim your FREE first-month installment.\n\nFree first-month installment is capped at PHP3,000 to be awarded as cashback 30 days after the promo period. DTIFTEB250095S26."
+              }
+            }
+          },
+          "schema": [
+            {
+              "$el": "h1",
+              "children": "Register",
+              "attrs": {
+                "class": "text-2xl font-bold mb-4"
+              }
+            },
+            {
+              "$formkit": "text",
+              "name": "code",
+              "id": "code",
+              "label": "Unique code",
+              "validation": "required|length:8,8"
+            },
+            {
+              "$formkit": "text",
+              "name": "l4",
+              "id": "l4",
+              "label": "Last 4 digits of your Security Bank credit card number",
+              "placeholder": "XXXX",
+              "validation": "required|number|length:4,4"
+            },
+            {
+              "$formkit": "text",
+              "name": "mobileNo",
+              "id": "mobileNo",
+              "label": "Mobile number",
+              "validation": [["required"], ["matches", "/^(09)[0-9]{9}$/"]],
+              "placeholder": "09XX-XXX-XXXX",
+              "validationMessages": {
+                "matches": "Please enter a valid Philippine mobile number."
+              }
+            },
+            {
+              "$formkit": "submit",
+              "type": "submit",
+              "id": "submit",
+              "name": "submit",
+              "label": "Register",
+              "disabled": "$disabled",
+              "children": {
+                "if": "$disabled",
+                "then": {
+                  "$el": "span",
+                  "attrs": {
+                    "class": "w-6 h-6 border-2 border-surface-1 border-r-transparent mr-2 rounded-full animate-spin"
+                  }
+                },
+                "else": "$label"
+              }
+            }
+          ]
+        },
+        {
+          "id": "alert",
+          "state": "success",
+          "component": "alert-hero-centered",
+          "props": {
+            "title": "Your registration is successful!",
+            "description": "$$Thank you for joining the Summer Installment Cashback Campaign!\n\nStart using your registered Security Bank credit card and spend at least PHP30,000 in a single-receipt 0% ChargeLight Installment or Charge Now, Pay Later to get a FREE first-month installment until May 31, 2026.\n\nFree first-month installment is capped at PHP3,000 to be awarded as cashback 30 days after the promo period. DTIFTEB250095S26.",
+            "variant": "success",
+            "iconSize": "80"
+          },
+          "classes": {
+            "outer": "my-6"
+          }
+        },
+        {
+          "id": "alert",
+          "state": "expired",
+          "component": "alert-hero-centered",
+          "props": {
+            "icon": "lucide:calendar-clock",
+            "title": "Registration Closed",
+            "description": "The registration period has ended. Thank you for your interest!",
+            "variant": "info"
+          },
+          "classes": {
+            "outer": "my-6",
+            "icon": "text-text-primary",
+            "description": "mt-0"
+          }
+        },
+        {
+          "id": "link-external",
+          "component": "link-external",
+          "props": {
+            "label": "Terms and Conditions apply",
+            "prefixIcon": "lucide:info",
+            "destination": "https://s3.us-east-1.amazonaws.com/assets.giftaway.ph/documents/COR10024_ID4698_TnCs_SummerInstallment.pdf"
+          },
+          "classes": {
+            "outer": "mt-20"
+          }
+        },
+        {
+          "id": "footer",
+          "component": "footer-legal-clause",
+          "props": {
+            "affiliate": "Securtity Bank"
+          }
+        }
+      ]
+    }
+  },
+  "theme": {
+    "colors": {
+      "--primary": "#07579F",
+      "--primary-soft": "#E2FOFE",
+      "--primary-dark": "#5AABF0",
+      "--primary-dark-soft": "#0F2F4A",
+      "--secondary": "#4B9ECF",
+      "--secondary-soft": "#E7F2F9",
+      "--secondary-dark": "#6CB4E0",
+      "--secondary-dark-soft": "#1A4255"
+    }
+  },
+  "schedule": {
+    "registration": {
+      "startDateTime": "",
+      "endDateTime": "2026/05/31 23:59:59"
+    }
+  }
+}

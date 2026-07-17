@@ -1,0 +1,496 @@
+{
+  "execution": "single",
+  "pageHead": {
+    "title": "Security Bank Mid Year Gadget Raffle Promo | Giftaway"
+  },
+  "pages": {
+    "home": {
+      "template": "home-main",
+      "isAuthorized": true,
+      "sections": [
+        {
+          "id": "cover",
+          "component": "cover-image",
+          "props": {
+            "coverUrl": "https://s3.us-east-1.amazonaws.com/assets.giftaway.ph/images/affiliates/securitybank/Midyear-1200-x-628.webp"
+          },
+          "classes": {
+            "outer": "-mx-6"
+          },
+          "attrs": {
+            "alt": "cover",
+            "height": "216"
+          }
+        },
+        {
+          "id": "heading",
+          "component": "heading-hero",
+          "props": {
+            "title": "Security Bank Mid Year Gadget Raffle Promo",
+            "description": "Shop and win the latest gadgets or SM Gift Pass weekly! Spend at least PHP1,000 Straight transaction or PHP5,000 on Installment using your Security Bank credit card to earn e-raffle entries!"
+          }
+        },
+        {
+          "id": "campaigns",
+          "component": "campaign-standard",
+          "sections": [
+            {
+              "id": "counter",
+              "component": "card-total-count",
+              "props": {
+                "title": "Get a chance to win amazing prizes",
+                "singularUnit": "Raffle Entry",
+                "pluralUnit": "Raffle Entries",
+                "footer": "Your Entries as of",
+                "iconUrl": "https://s3.us-east-1.amazonaws.com/assets.giftaway.ph/images/affiliates/securitybank/raffle-icon.png"
+              }
+            },
+            {
+              "id": "raffle-info",
+              "component": "carousel-with-dialog",
+              "props": {
+                "items": [
+                  {
+                    "id": "raffle-info-1",
+                    "title": "Weekly Draw",
+                    "description": "Apple and Samsung Gadgets plus SM Gift Pass Vouchers",
+                    "footer": "More Info",
+                    "details": "$$Get a chance to win these amazing prizes in the weekly draws. Be sure to check out our website or Facebook page to see if the winner is you!\n\n### 🗓️ Week 1 (June 4, 2025)\n- **1 winner** of 15-in MacBook Air\n- **1 winner** of Samsung Galaxy S25 Plus\n- **1 winner** of Samsung Galaxy S25\n- **1 winner** of iPhone 16\n- **1 winner** of Samsung Watch 7\n- **1 winner** of Apple Watch SE\n- **1 winner** of AirPods (3rd Generation)\n- **1 winner** of PHP5,000 SM Gift Pass\n- **29 winners** of PHP1,000 SM Gift Pass each\n\n### 🗓️ Week 2 (June 11, 2025)\n- **1 winner** of 13-in iPad Pro M4\n- **1 winner** of Samsung Galaxy S25 Plus\n- **1 winner** of iPhone 16 Pro Max\n- **1 winner** of Samsung Galaxy S25\n- **1 winner** of iPhone 16\n- **1 winner** of Samsung Watch 7\n- **1 winner** of Apple Watch SE\n- **1 winner** of AirPods (3rd Generation)\n- **30 winners** of PHP1,000 SM Gift Pass each\n\n### 🗓️ Week 3 (June 18, 2025)\n- **1 winner** of 14-in MacBook Pro M4\n- **1 winner** of Samsung Galaxy S25 Plus\n- **1 winner** of iPhone 16 Pro Max\n- **1 winner** of Samsung Galaxy S25\n- **1 winner** of Samsung Watch 7\n- **1 winner** of Apple Watch SE\n- **1 winner** of AirPods (3rd Generation)\n- **1 winner** of PHP5,000 SM Gift Pass\n- **29 winners** of PHP1,000 SM Gift Pass each\n\n### 🗓️ Week 4 (June 25, 2025)\n- **1 winner** of 13-in iPad Pro M4\n- **1 winner** of Samsung Galaxy S25 Plus\n- **1 winner** of iPhone 16 Pro Max\n- **1 winner** of Samsung Galaxy S25\n- **1 winner** of iPhone 16\n- **1 winner** of Samsung Watch 7\n- **1 winner** of Apple Watch SE\n- **1 winner** of AirPods (3rd Generation)\n- **30 winners** of PHP1,000 SM Gift Pass each\n\n### 🗓️ Week 5 (July 2, 2025)\n- **1 winner** of 15-in MacBook Air\n- **1 winner** of Samsung Galaxy S25 Plus\n- **1 winner** of Samsung Galaxy S25\n- **1 winner** of iPhone 16\n- **1 winner** of Samsung Watch 7\n- **1 winner** of Apple Watch SE\n- **1 winner** of AirPods (3rd Generation)\n- **1 winner** of PHP5,000 SM Gift Pass\n- **29 winners** of PHP1,000 SM Gift Pass each\n\n### 🗓️ Week 6 (July 9, 2025)\n- **1 winner** of 13-in iPad Pro M4\n- **1 winner** of Samsung Galaxy S25 Plus\n- **1 winner** of iPhone 16 Pro Max\n- **1 winner** of Samsung Galaxy S25\n- **1 winner** of iPhone 16\n- **1 winner** of Samsung Watch 7\n- **1 winner** of Apple Watch SE\n- **1 winner** of AirPods (3rd Generation)\n- **30 winners** of PHP1,000 SM Gift Pass each\n\n### 🗓️ Week 7 (July 16, 2025)\n- **1 winner** of 14-in MacBook Pro M4\n- **1 winner** of Samsung Galaxy S25 Plus\n- **1 winner** of iPhone 16 Pro Max\n- **1 winner** of Samsung Galaxy S25\n- **1 winner** of Samsung Watch 7\n- **1 winner** of Apple Watch SE\n- **1 winner** of AirPods (3rd Generation)\n- **1 winner** of PHP5,000 SM Gift Pass\n- **29 winners** of PHP1,000 SM Gift Pass each\n\n### 🗓️ Week 8 (July 23, 2025)\n- **1 winner** of 13-in iPad Pro M4\n- **1 winner** of Samsung Galaxy S25 Plus\n- **1 winner** of iPhone 16 Pro Max\n- **1 winner** of Samsung Galaxy S25\n- **1 winner** of iPhone 16\n- **1 winner** of Samsung Watch 7\n- **1 winner** of Apple Watch SE\n- **1 winner** of AirPods (3rd Generation)\n- **30 winners** of PHP1,000 SM Gift Pass each\n\n### 🗓️ Week 9 (July 30, 2025)\n- **1 winner** of 15-in MacBook Air\n- **1 winner** of Samsung Galaxy S25 Plus\n- **1 winner** of Samsung Galaxy S25\n- **1 winner** of iPhone 16\n- **1 winner** of Samsung Watch 7\n- **1 winner** of Apple Watch SE\n- **1 winner** of AirPods (3rd Generation)\n- **1 winner** of PHP5,000 SM Gift Pass\n- **29 winners** of PHP1,000 SM Gift Pass each\n\n### 🗓️ Week 10 (August 6, 2025)\n- **1 winner** of Samsung Galaxy S25 Plus\n- **1 winner** of iPhone 16 Pro Max\n- **1 winner** of Samsung Watch 7\n- **1 winner** of Apple Watch SE\n- **1 winner** of AirPods (3rd Generation)\n- **2 winners** of PHP10,000 SM Gift Pass each\n- **2 winners** of PHP5,000 SM Gift Pass each\n- **26 winners** of PHP1,000 SM Gift Pass each"
+                  },
+                  {
+                    "id": "raffle-info-2",
+                    "title": "Grand Draw",
+                    "description": "Apple and Samsung Gadgets Grand Prize",
+                    "footer": "More Info",
+                    "details": "$$Get a chance to win these amazing prizes in the grand draw. Be sure to check out our website or Facebook page to see if the winner is you!\n\n### ✨ Grand Draw Aug 13, 2025\n- **1 winner** of 14-inch MacBook Pro M4\n- **1 winner** of 13-inch iPad Pro M4\n- **1 winner** of Samsung Galaxy S25 Ultra\n- **2 winners** of 15-inch MacBook Air (M3)\n- **2 winners** of 11-inch iPad Pro M4"
+                  }
+                ],
+                "dialog": {
+                  "title": "Raffle Prizes",
+                  "description": "Get a chance to win these amazing prizes in the weekly and grand prize draws.",
+                  "tabs": [
+                    {
+                      "id": "raffle-info-1",
+                      "title": "Weekly Draw"
+                    },
+                    {
+                      "id": "raffle-info-2",
+                      "title": "Grand Draw"
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "id": "history",
+              "component": "table-transaction",
+              "props": {
+                "title": "Transaction History",
+                "raffleCountUnit": ["Raffle Entry", "Raffle Entries"]
+              },
+              "classes": {
+                "outer": "mb-10"
+              }
+            }
+          ]
+        },
+        {
+          "id": "link-external",
+          "component": "link-external",
+          "props": {
+            "label": "Terms and Conditions apply",
+            "prefixIcon": "lucide:info",
+            "destination": "https://s3.us-east-1.amazonaws.com/assets.giftaway.ph/documents/SB_TC_Mid%20Year%20Raffle%20Promo.pdf"
+          }
+        },
+        {
+          "id": "logout",
+          "component": "button-logout",
+          "props": {
+            "suffixIcon": "lucide:log-out",
+            "label": "Log out"
+          }
+        },
+        {
+          "id": "footer",
+          "component": "footer-legal-clause",
+          "props": {
+            "affiliate": "Securtity Bank"
+          }
+        }
+      ]
+    },
+    "login": {
+      "template": "login-main",
+      "states": ["login", "otp", "expired"],
+      "sections": [
+        {
+          "id": "cover",
+          "component": "cover-image",
+          "props": {
+            "coverUrl": "https://s3.us-east-1.amazonaws.com/assets.giftaway.ph/images/affiliates/securitybank/Midyear-1200-x-628.webp"
+          },
+          "classes": {
+            "outer": "-mx-6"
+          },
+          "attrs": {
+            "alt": "cover",
+            "height": "216"
+          }
+        },
+        {
+          "id": "heading",
+          "component": "heading-hero",
+          "props": {
+            "title": "Security Bank Mid Year Gadget Raffle Promo",
+            "description": "Shop and win the latest gadgets or SM Gift Pass weekly! Spend at least PHP1,000 Straight transaction or PHP5,000 on Installment using your Security Bank credit card to earn e-raffle entries!"
+          }
+        },
+        {
+          "id": "alert",
+          "state": "login",
+          "component": "alert-hero-centered",
+          "props": {
+            "icon": "lucide:calendar-clock",
+            "title": "Promo Has Ended",
+            "description": "This promotion has concluded. Thank you for participating!"
+          },
+          "classes": {
+            "outer": "my-6",
+            "icon": "bg-surface-primary text-text-primary",
+            "description": "mt-0"
+          }
+        },
+        {
+          "id": "form-login",
+          "component": "form-login",
+          "state": "expired",
+          "alert": {
+            "component": "alert-card",
+            "map": {
+              "InvalidUserPassword": {
+                "type": "error",
+                "title": "Invalid Unique Code or Mobile Number",
+                "description": "The unique code or mobile number you entered is incorrect. Please try again."
+              }
+            }
+          },
+          "schema": [
+            {
+              "$el": "h1",
+              "children": "Login",
+              "attrs": {
+                "class": "text-2xl font-bold mb-4"
+              }
+            },
+            {
+              "$formkit": "text",
+              "name": "code",
+              "id": "code",
+              "label": "Unique code",
+              "validation": "required|length:8,8"
+            },
+            {
+              "$formkit": "text",
+              "name": "mobileNo",
+              "id": "mobileNo",
+              "label": "Mobile number",
+              "validation": [["required"], ["matches", "/^(09)[0-9]{9}$/"]],
+              "placeholder": "09XX-XXX-XXXX",
+              "validationMessages": {
+                "matches": "Please enter a valid Philippine mobile number."
+              }
+            },
+            {
+              "$formkit": "submit",
+              "type": "submit",
+              "name": "submit",
+              "id": "submit",
+              "label": "Log in",
+              "disabled": "$disabled",
+              "children": {
+                "if": "$disabled",
+                "then": {
+                  "$el": "span",
+                  "attrs": {
+                    "class": "w-6 h-6 border-2 border-surface-1 border-r-transparent mr-2 rounded-full animate-spin"
+                  }
+                },
+                "else": "$label"
+              }
+            }
+          ]
+        },
+        {
+          "id": "form-login-otp",
+          "component": "form-login-otp",
+          "state": "otp",
+          "schema": [
+            {
+              "$el": "h1",
+              "children": "Login Verification",
+              "attrs": {
+                "class": "text-2xl font-bold mb-4"
+              }
+            },
+            {
+              "$formkit": "text",
+              "name": "code",
+              "id": "code",
+              "label": "Verification code",
+              "validation": "required|length:6,6",
+              "help": "Please enter the 6-digit code sent to your mobile number.",
+              "sectionsSchema": {
+                "input": {
+                  "attrs": {
+                    "autofocus": true
+                  }
+                },
+                "help": {
+                  "children": "$: 'Please enter the 6-digit code sent to ' + $mobileNo + '.'"
+                }
+              }
+            },
+            {
+              "$formkit": "submit",
+              "type": "submit",
+              "id": "submit",
+              "name": "submit",
+              "label": "Proceed",
+              "disabled": "$disabled",
+              "children": {
+                "if": "$disabled",
+                "then": {
+                  "$el": "span",
+                  "attrs": {
+                    "class": "w-6 h-6 border-2 border-surface-1 border-r-transparent mr-2 rounded-full animate-spin"
+                  }
+                },
+                "else": "$label"
+              }
+            }
+          ]
+        },
+        {
+          "id": "link-external",
+          "component": "link-external",
+          "props": {
+            "label": "Terms and Conditions apply",
+            "prefixIcon": "lucide:info",
+            "destination": "https://s3.us-east-1.amazonaws.com/assets.giftaway.ph/documents/SB_TC_Mid%20Year%20Raffle%20Promo.pdf"
+          },
+          "classes": {
+            "outer": "mt-20"
+          },
+          "attrs": {
+            "target": "_blank",
+            "rel": "noopener noreferrer"
+          }
+        },
+        {
+          "id": "footer",
+          "component": "footer-component-1",
+          "props": {
+            "affiliate": "Securtity Bank"
+          }
+        }
+      ]
+    },
+    "register": {
+      "template": "register-main",
+      "states": ["registration", "success", "expired"],
+      "sections": [
+        {
+          "id": "cover",
+          "component": "cover-image",
+          "props": {
+            "coverUrl": "https://s3.us-east-1.amazonaws.com/assets.giftaway.ph/images/affiliates/securitybank/Midyear-1200-x-628.webp"
+          },
+          "classes": {
+            "outer": "-mx-6"
+          },
+          "attrs": {
+            "alt": "cover",
+            "height": "216"
+          }
+        },
+        {
+          "id": "heading",
+          "component": "heading-hero",
+          "state": "expired",
+          "props": {
+            "title": "Security Bank Mid Year Gadget Raffle Promo",
+            "description": "Shop and win the latest gadgets or SM Gift Pass weekly! Spend at least PHP1,000 Straight transaction or PHP5,000 on Installment using your Security Bank credit card to earn e-raffle entries!"
+          }
+        },
+        {
+          "id": "form",
+          "component": "form-register",
+          "state": "expired",
+          "alert": {
+            "component": "alert-card",
+            "map": {
+              "InvalidReferenceNo": {
+                "type": "error",
+                "title": "Your registration was unsuccessful",
+                "description": "This may be due to incorrect or mismatched details. Please retry with the correct details or contact Security Bank to update records if needed. T&Cs apply. DTIFTEB 223129S25."
+              },
+              "AlreadyRegisteredUsername": {
+                "type": "error",
+                "title": "You're already registered!",
+                "description": "Shop anywhere using your Security Bank credit card to earn e-raffle entries! T&Cs apply. DTIFTEB 223129S25."
+              },
+              "AlreadyRegisteredReferenceNo": {
+                "type": "error",
+                "title": "You're already registered!",
+                "description": "Shop anywhere using your Security Bank credit card to earn e-raffle entries! T&Cs apply. DTIFTEB 223129S25."
+              }
+            }
+          },
+          "schema": [
+            {
+              "$el": "h1",
+              "children": "Register",
+              "attrs": {
+                "class": "text-2xl font-bold mb-4"
+              }
+            },
+            {
+              "$formkit": "text",
+              "name": "code",
+              "id": "code",
+              "label": "Unique code",
+              "validation": "required|length:8,8"
+            },
+            {
+              "$formkit": "text",
+              "name": "l4",
+              "id": "l4",
+              "label": "Last 4 digits of your Security Bank credit card number",
+              "placeholder": "XXXX",
+              "validation": "required|number|length:4,4"
+            },
+            {
+              "$formkit": "text",
+              "name": "mobileNo",
+              "id": "mobileNo",
+              "label": "Mobile number",
+              "validation": [["required"], ["matches", "/^(09)[0-9]{9}$/"]],
+              "placeholder": "09XX-XXX-XXXX",
+              "validationMessages": {
+                "matches": "Please enter a valid Philippine mobile number."
+              }
+            },
+            {
+              "$formkit": "submit",
+              "type": "submit",
+              "id": "submit",
+              "name": "submit",
+              "label": "Register",
+              "disabled": "$disabled",
+              "children": {
+                "if": "$disabled",
+                "then": {
+                  "$el": "span",
+                  "attrs": {
+                    "class": "w-6 h-6 border-2 border-surface-1 border-r-transparent mr-2 rounded-full animate-spin"
+                  }
+                },
+                "else": "$label"
+              }
+            }
+          ]
+        },
+        {
+          "id": "divider",
+          "component": "divider-horizontal-with-label",
+          "state": "expired",
+          "props": {
+            "label": "Already have an account?"
+          },
+          "classes": {
+            "outer": "mx-6"
+          }
+        },
+        {
+          "id": "alert",
+          "state": "success",
+          "component": "alert-hero-centered",
+          "props": {
+            "icon": "lucide:check",
+            "title": "Your registration is successful!",
+            "description": "Shop anywhere using your Security Bank credit card to earn e-raffle entries!\n\nT&Cs apply. DTIFTEB 223129S25.",
+            "variant": "success"
+          },
+          "classes": {
+            "outer": "my-6"
+          }
+        },
+        {
+          "id": "alert",
+          "state": "registration",
+          "component": "alert-hero-centered",
+          "props": {
+            "icon": "lucide:calendar-clock",
+            "title": "Registration Closed",
+            "description": "The registration period has ended. Thank you for your interest!"
+          },
+          "classes": {
+            "outer": "my-6",
+            "icon": "bg-surface-primary text-text-primary",
+            "description": "mt-0"
+          }
+        },
+        {
+          "id": "link-internal",
+          "component": "link-internal",
+          "props": {
+            "destination": "/login",
+            "label": "Log in"
+          }
+        },
+        {
+          "id": "link-external",
+          "component": "link-external",
+          "props": {
+            "label": "Terms and Conditions apply",
+            "prefixIcon": "lucide:info",
+            "destination": "https://s3.us-east-1.amazonaws.com/assets.giftaway.ph/documents/SB_TC_Mid%20Year%20Raffle%20Promo.pdf"
+          },
+          "classes": {
+            "outer": "mt-20"
+          }
+        },
+        {
+          "id": "footer",
+          "component": "footer-legal-clause",
+          "props": {
+            "affiliate": "Securtity Bank"
+          }
+        }
+      ]
+    }
+  },
+  "theme": {
+    "colors": {
+      "--primary": "#07579F",
+      "--primary-soft": "#E2FOFE",
+      "--primary-dark": "#5AABF0",
+      "--primary-dark-soft": "#0F2F4A",
+      "--secondary": "#4B9ECF",
+      "--secondary-soft": "#E7F2F9",
+      "--secondary-dark": "#6CB4E0",
+      "--secondary-dark-soft": "#1A4255"
+    }
+  },
+  "schedule": {
+    "registration": {
+      "startDateTime": "",
+      "endDateTime": ""
+    },
+    "redemption": {
+      "startDateTime": "",
+      "endDateTime": ""
+    }
+  }
+}
