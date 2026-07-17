@@ -1,5 +1,6 @@
 export default defineNuxtConfig({
-  // Tell Nuxt to look one folder up for all the code,
-  // automatically handling aliases (~/@), components, and the server folder.
   srcDir: '..',
+
+  // Tell the watcher to completely ignore these massive folders
+  ignore: ['../.output/**', '../.nuxt/**', '../node_modules/**', '../dist/**', '../.git/**'],
 });
