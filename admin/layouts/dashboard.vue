@@ -1,12 +1,12 @@
 <script setup lang="ts">
 import ModalProvider from '~admin/components/shared/ModalProvider.vue';
-import { Button } from '@/components/shadcn-ui/button';
+import { Button } from '~/shared/components/shadcn-ui/button';
 import {
   DropdownMenu,
   DropdownMenuContent,
   DropdownMenuItem,
   DropdownMenuTrigger,
-} from '@/components/shadcn-ui/dropdown-menu';
+} from '~/shared/components/shadcn-ui/dropdown-menu';
 import { VueQueryDevtools } from '@tanstack/vue-query-devtools';
 import { useBuilderTitle } from '../composables/builder/useBuilderTitle';
 

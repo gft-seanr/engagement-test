@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { User, Phone, Mail, UserX } from 'lucide-vue-next';
-import { Button } from '@/components/shadcn-ui/button';
+import { Button } from '~/shared/components/shadcn-ui/button';
 import type { SpamEntry } from '~/admin/types/receipt-dashboard';
 
 interface Props {

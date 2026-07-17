@@ -2,7 +2,7 @@
 import type { WithClassAsProps } from './interface';
 import { ArrowLeft } from 'lucide-vue-next';
 
-import { Button, type ButtonVariants } from '@/components/shadcn-ui/button';
+import { Button, type ButtonVariants } from '~/shared/components/shadcn-ui/button';
 import { useCarousel } from './useCarousel';
 
 const props = withDefaults(

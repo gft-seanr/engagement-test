@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { Button } from '@/components/shadcn-ui/button';
+import { Button } from '~/shared/components/shadcn-ui/button';
 
 interface Props {
   currentPage: number;
