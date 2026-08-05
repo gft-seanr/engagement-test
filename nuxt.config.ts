@@ -66,26 +66,26 @@ export default defineNuxtConfig({
   extends: ['./admin'],
   components: [
     {
-      path: '~/components/global/templates',
+      path: './components/global/templates', // ✨ changed ~/ to ./
       prefix: '',
       global: true,
     },
     {
-      path: '~/components/global/campaigns',
+      path: './components/global/campaigns', // ✨ changed ~/ to ./
       prefix: '',
       global: true,
     },
     {
-      path: '~/components/global/ui',
+      path: './components/global/ui', // ✨ changed ~/ to ./
       prefix: '',
       global: true,
     },
     {
-      path: '~/components/core',
+      path: './components/core', // ✨ changed ~/ to ./
       prefix: '',
     },
     {
-      path: '~/components/shared',
+      path: './components/shared', // ✨ changed ~/ to ./
       prefix: '',
     },
   ],
