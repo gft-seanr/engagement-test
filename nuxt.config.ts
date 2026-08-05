@@ -47,7 +47,6 @@ export default defineNuxtConfig({
   css: [
     fileURLToPath(new URL('./assets/styles/main.css', import.meta.url)),
     fileURLToPath(new URL('./assets/styles/transition.css', import.meta.url)),
-    fileURLToPath(new URL('./assets/css/main.css', import.meta.url)),
   ],
   imports: {
     dirs: ['composables/**', 'services/**', 'constants/**', 'utils/**', 'components/shared/**'],
