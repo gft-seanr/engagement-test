@@ -44,7 +44,7 @@ export default defineNuxtConfig({
     'motion-v/nuxt',
     '@pinia/nuxt',
   ],
-  css: ['~/assets/styles/main.css', '~/assets/styles/transition.css'],
+  css: ['./assets/styles/main.css', './assets/styles/transition.css'],
   imports: {
     dirs: ['composables/**', 'services/**', 'constants/**', 'utils/**', 'components/shared/**'],
   },
